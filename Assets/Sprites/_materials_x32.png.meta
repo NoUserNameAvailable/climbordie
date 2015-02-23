@@ -41,10 +41,10 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 12
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -193,7 +193,7 @@ TextureImporter:
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _materials_x32_15
+    - name: _materials_x32_14
       rect:
         serializedVersion: 2
         x: 0
@@ -203,7 +203,7 @@ TextureImporter:
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _materials_x32_16
+    - name: _materials_x32_15
       rect:
         serializedVersion: 2
         x: 32
@@ -213,7 +213,7 @@ TextureImporter:
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _materials_x32_17
+    - name: _materials_x32_16
       rect:
         serializedVersion: 2
         x: 64
@@ -223,7 +223,7 @@ TextureImporter:
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _materials_x32_18
+    - name: _materials_x32_17
       rect:
         serializedVersion: 2
         x: 96
