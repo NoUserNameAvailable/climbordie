@@ -8,25 +8,31 @@ AnimatorController:
   m_Name: _snowman_0
   serializedVersion: 2
   m_AnimatorParameters:
-  - m_Name: jump
+  - m_Name: +jump
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: run
+  - m_Name: +run
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: run_stop
+  - m_Name: -run
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: jump_next
+  - m_Name: -jump
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: jumpNext
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -57,7 +63,27 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: jump_next
+    m_ConditionEvent: -jump
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110127206
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110220642}
+  m_DstState: {fileID: 110214746}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: -jump
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -96,10 +122,10 @@ Transition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: jump_next
+  - m_ConditionMode: 5
+    m_ConditionEvent: jumpNext
     m_EventTreshold: 0
-    m_ExitTime: 1
+    m_ExitTime: .200000003
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -117,7 +143,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: jump
+    m_ConditionEvent: +jump
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -137,7 +163,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: run
+    m_ConditionEvent: +run
     m_EventTreshold: 0
     m_ExitTime: 0
   m_Atomic: 1
@@ -157,9 +183,9 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: run_stop
+    m_ConditionEvent: -run
     m_EventTreshold: 0
-    m_ExitTime: 0
+    m_ExitTime: 1
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -197,7 +223,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: jump
+    m_ConditionEvent: +jump
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -236,10 +262,10 @@ Transition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: jump_next
+  - m_ConditionMode: 5
+    m_ConditionEvent: -jump
     m_EventTreshold: 0
-    m_ExitTime: 1
+    m_ExitTime: .200000003
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -340,7 +366,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: player_jump_1
-  m_Speed: 0
+  m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 16dba6877cd88e34bbdbf9c66e931187, type: 2}
@@ -400,7 +426,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: player_jump_2
-  m_Speed: 0
+  m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: c880d0f58784f904cb6a9e11513d721c, type: 2}
@@ -442,27 +468,28 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110214746}
+      first: {fileID: 110240088}
       second:
-      - {fileID: 110176968}
-    data:
-      first: {fileID: 110268368}
-      second:
-      - {fileID: 110114348}
-    data:
-      first: {fileID: 110220642}
-      second:
-      - {fileID: 110133522}
+      - {fileID: 110150968}
+      - {fileID: 110147406}
     data:
       first: {fileID: 110231838}
       second:
       - {fileID: 110157690}
       - {fileID: 110164436}
     data:
-      first: {fileID: 110240088}
+      first: {fileID: 110220642}
       second:
-      - {fileID: 110150968}
-      - {fileID: 110147406}
+      - {fileID: 110133522}
+      - {fileID: 110127206}
+    data:
+      first: {fileID: 110268368}
+      second:
+      - {fileID: 110114348}
+    data:
+      first: {fileID: 110214746}
+      second:
+      - {fileID: 110176968}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -240, y: -120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
