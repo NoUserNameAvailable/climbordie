@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e359604e84dbea74992fbd12d89ddc88
+guid: 9f1b40bc988dfd34dad0ba49e7b87ab5
 TextureImporter:
   fileIDToRecycleName:
     21300000: _materials_x32_0
@@ -16,12 +16,10 @@ TextureImporter:
     21300022: _materials_x32_11
     21300024: _materials_x32_12
     21300026: _materials_x32_13
-    21300028: _materials_x32_14
-    21300030: _materials_x32_15
-    21300032: _materials_x32_16
-    21300034: _materials_x32_17
-    21300036: _materials_x32_18
-    21300038: _materials_x32_19
+    21300028: _materials_x32_15
+    21300030: _materials_x32_16
+    21300032: _materials_x32_17
+    21300034: _materials_x32_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -47,7 +45,7 @@ TextureImporter:
     filterMode: 0
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapMode: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -71,7 +69,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_1
       rect:
@@ -81,7 +79,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_2
       rect:
@@ -91,7 +89,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_3
       rect:
@@ -101,7 +99,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_4
       rect:
@@ -111,7 +109,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_5
       rect:
@@ -121,7 +119,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_6
       rect:
@@ -131,7 +129,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_7
       rect:
@@ -141,7 +139,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_8
       rect:
@@ -151,7 +149,17 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: _materials_x32_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_10
       rect:
@@ -161,7 +169,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_11
       rect:
@@ -171,7 +179,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_12
       rect:
@@ -181,7 +189,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _materials_x32_13
       rect:
@@ -191,9 +199,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _materials_x32_14
+    - name: _materials_x32_15
       rect:
         serializedVersion: 2
         x: 0
@@ -201,9 +209,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _materials_x32_15
+    - name: _materials_x32_16
       rect:
         serializedVersion: 2
         x: 32
@@ -211,9 +219,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _materials_x32_16
+    - name: _materials_x32_17
       rect:
         serializedVersion: 2
         x: 64
@@ -221,9 +229,9 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _materials_x32_17
+    - name: _materials_x32_18
       rect:
         serializedVersion: 2
         x: 96
@@ -231,7 +239,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 1
-      pivot: {x: 0, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
