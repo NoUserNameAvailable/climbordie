@@ -8,31 +8,31 @@ AnimatorController:
   m_Name: _snowman_0
   serializedVersion: 2
   m_AnimatorParameters:
-  - m_Name: +jump
+  - m_Name: run
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: +run
+  - m_Name: stay
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: -run
+  - m_Name: fall
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: -jump
+  - m_Name: landing
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: jumpNext
+  - m_Name: jump
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -63,14 +63,14 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: -jump
+    m_ConditionEvent: landing
     m_EventTreshold: 0
-    m_ExitTime: 1
+    m_ExitTime: .200000003
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110127206
+--- !u!1101 &110121018
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
@@ -78,12 +78,12 @@ Transition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_SrcState: {fileID: 110220642}
-  m_DstState: {fileID: 110214746}
+  m_DstState: {fileID: 110240088}
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: -jump
+    m_ConditionEvent: jump
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -123,9 +123,9 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: jumpNext
+    m_ConditionEvent: landing
     m_EventTreshold: 0
-    m_ExitTime: .200000003
+    m_ExitTime: .100000001
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -143,7 +143,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: +jump
+    m_ConditionEvent: fall
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -163,7 +163,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: +run
+    m_ConditionEvent: run
     m_EventTreshold: 0
     m_ExitTime: 0
   m_Atomic: 1
@@ -183,7 +183,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: -run
+    m_ConditionEvent: stay
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -210,6 +210,46 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110160326
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110220642}
+  m_DstState: {fileID: 110214746}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: landing
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110161458
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110268368}
+  m_DstState: {fileID: 110240088}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: jump
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110164436
 Transition:
   serializedVersion: 2
@@ -223,7 +263,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: +jump
+    m_ConditionEvent: fall
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -263,7 +303,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: -jump
+    m_ConditionEvent: run
     m_EventTreshold: 0
     m_ExitTime: .200000003
   m_Atomic: 1
@@ -481,11 +521,13 @@ StateMachine:
       first: {fileID: 110220642}
       second:
       - {fileID: 110133522}
-      - {fileID: 110127206}
+      - {fileID: 110160326}
+      - {fileID: 110121018}
     data:
       first: {fileID: 110268368}
       second:
       - {fileID: 110114348}
+      - {fileID: 110161458}
     data:
       first: {fileID: 110214746}
       second:
