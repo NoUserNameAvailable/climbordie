@@ -5,36 +5,48 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Players : MonoBehaviour {
 
+	// Player stats
 	public int speed;
 	public int jumpSpeed;
+	public int jumpLimit;
 
+	// For one-way collision
+	public bool oneWayCollision;
+
+	// Animator for animation control
 	private Animator animator;
 
-	private bool jump = false;
+	// Jump
+	private int jump = 0;
 	private int jumpState = 0;
+	private bool canJump = true;
+
+	// Rotate sprite when run left
 	private bool runRight = false;
 
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		animeSprite ();
 
+	void Update () {
 		// Basic player control
 
 		// Jumping
-		if (Input.GetKey("up") && jump == false) {
+		if (Input.GetKeyDown ("up") && jump < jumpLimit) {
+			canJump = true;
+		}
+
+		if (Input.GetKey("up") && (jump == 0 || canJump)) {
 			Vector3 movement = new Vector3(rigidbody2D.velocity.x, 1.0f * jumpSpeed, 0.0f);
 			rigidbody2D.velocity = movement;
-
+			
 			jumpState = 0;
-			jump = true;
+			canJump = false;
+			jump++;
 		}
 		
-		if (jump) doJump ();
+		if (jump > 0) doJump();
 
 		// Run left
 		if (Input.GetKey ("left")) {
@@ -43,7 +55,6 @@ public class Players : MonoBehaviour {
 
 			Vector3 movement = new Vector3(-1.0f * speed, rigidbody2D.velocity.y, 0.0f);
 			rigidbody2D.velocity = movement;
-			animator.SetTrigger("+run");
 		}
 
 		// Run right
@@ -53,7 +64,6 @@ public class Players : MonoBehaviour {
 
 			Vector3 movement = new Vector3(1.0f * speed, rigidbody2D.velocity.y, 0.0f);
 			rigidbody2D.velocity = movement;
-			animator.SetTrigger("+run");
 		}
 
 		// Stop running
@@ -61,9 +71,11 @@ public class Players : MonoBehaviour {
 			Vector3 movement = new Vector3(0.0f, rigidbody2D.velocity.y, 0.0f);
 			rigidbody2D.velocity = movement;
 		}
-	
+
+		animeSprite ();
 	}
 
+	// Rotate sprite when run in a side
 	void runRotate() {
 		runRight = !runRight;
 
@@ -74,30 +86,41 @@ public class Players : MonoBehaviour {
 
 	// Make it jump !
 	void doJump() {
-		if (rigidbody2D.velocity.y < 0) {
-			animator.ResetTrigger("-jump");
-			animator.SetTrigger("+jump");
+		if (jumpState == 0 && rigidbody2D.velocity.y < 0) {
 			jumpState = 1;
 		}
 
-		// Back to initiale
-		if (jump && jumpState == 1 && rigidbody2D.velocity.y == 0) {
-			animator.ResetTrigger("+jump");
-			animator.SetTrigger ("-jump");
-			jump = false;
+		// Back to beginning
+		if (jump > 0 && jumpState == 1 && rigidbody2D.velocity.y == 0) {
+			animator.ResetTrigger("fall");
+			animator.SetTrigger ("landing");
+			jump = 0;
 		}
 	}
 
 	// Trigger animation
 	void animeSprite() {
-		if (Input.GetKeyDown ("left") || Input.GetKeyDown ("right")) {
-			animator.ResetTrigger("-run");
-		}
-		if (Input.GetKeyUp ("left") || Input.GetKeyUp ("right")) {
-			if (!jump)
-				animator.SetTrigger("-run");
+		float velocityX = rigidbody2D.velocity.x;
+		float velocityY = rigidbody2D.velocity.y;
 
-			animator.ResetTrigger("+run");
+		if (velocityX != 0) {
+			animator.SetTrigger ("run");
+		} else {
+			animator.SetTrigger("stay");
+		}
+
+		if (velocityY > 0) {
+			animator.SetTrigger("jump");
+		}
+		if (velocityY < 0) {
+			animator.ResetTrigger("jump");
+			animator.SetTrigger("fall");
+
+			// When player fall is jump (animation and block player jumping)
+			if (jump == 0) {
+				jumpState = 1;
+				jump = 1;
+			}
 		}
 	}
 
