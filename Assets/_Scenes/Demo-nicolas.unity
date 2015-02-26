@@ -418,7 +418,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.27999997, y: .319999993}
+  m_Size: {x: 6.07999992, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!1 &116087077
 GameObject:
@@ -802,7 +802,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &239772490
 GameObject:
@@ -900,7 +900,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &243552056
 GameObject:
@@ -998,7 +998,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &294127693
 GameObject:
@@ -1096,7 +1096,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &382595714
 GameObject:
@@ -1272,7 +1272,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &424440679
 GameObject:
@@ -1640,7 +1640,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1001 &543126204
 Prefab:
@@ -1914,7 +1914,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &630856460
 GameObject:
@@ -2245,7 +2245,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &700237573
 GameObject:
@@ -2343,7 +2343,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &715945748
 GameObject:
@@ -2576,7 +2576,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1001 &799518825
 Prefab:
@@ -2616,6 +2616,10 @@ Prefab:
     - target: {fileID: 415948, guid: a7b1ee609dfa33648ab0aa043ac9f810, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21215946, guid: a7b1ee609dfa33648ab0aa043ac9f810, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1307558999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a7b1ee609dfa33648ab0aa043ac9f810, type: 2}
@@ -2810,7 +2814,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22423190, guid: 78bff344eaa188f428e8dca92549e36f, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 22423190, guid: 78bff344eaa188f428e8dca92549e36f, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -2879,6 +2883,14 @@ Prefab:
     - target: {fileID: 6141902, guid: 78bff344eaa188f428e8dca92549e36f, type: 2}
       propertyPath: m_Size.x
       value: 6.17999983
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123190, guid: 78bff344eaa188f428e8dca92549e36f, type: 2}
+      propertyPath: m_Size.x
+      value: 6.07999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 22323190, guid: 78bff344eaa188f428e8dca92549e36f, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 127538681
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78bff344eaa188f428e8dca92549e36f, type: 2}
@@ -3045,7 +3057,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1006093555
 GameObject:
@@ -3847,7 +3859,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1191184942
 GameObject:
@@ -3990,7 +4002,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!224 &1206841030
 RectTransform:
@@ -4107,7 +4119,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1317097097
 GameObject:
@@ -4205,7 +4217,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1327395605
 GameObject:
@@ -4303,7 +4315,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1336189075
 GameObject:
@@ -4465,7 +4477,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1358693023
 GameObject:
@@ -4701,7 +4713,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1389558619
 GameObject:
@@ -4799,7 +4811,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1401014405
 GameObject:
@@ -4897,7 +4909,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1418300979
 GameObject:
@@ -4995,7 +5007,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1478915489
 GameObject:
@@ -5116,7 +5128,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1307558999
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7d8eab37563983a45bf5945bfb912022, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5337,7 +5349,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1622570535
 GameObject:
@@ -5647,7 +5659,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &1840183976
 GameObject:
@@ -5745,7 +5757,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1001 &1857235864
 Prefab:
@@ -6135,7 +6147,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1001 &1942211115
 Prefab:
@@ -6550,7 +6562,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!224 &1962258054
 RectTransform:
@@ -6667,7 +6679,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &2049213662
 GameObject:
@@ -6893,7 +6905,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!1 &2088343356
 GameObject:

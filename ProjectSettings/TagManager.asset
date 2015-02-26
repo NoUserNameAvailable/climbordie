@@ -41,3 +41,27 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: Background
+    userID: 1
+    uniqueID: 3483499433
+    locked: 0
+  - name: Platform
+    userID: 2
+    uniqueID: 127538681
+    locked: 0
+  - name: Object
+    userID: 6
+    uniqueID: 3104399941
+    locked: 0
+  - name: Player
+    userID: 3
+    uniqueID: 1307558999
+    locked: 0
+  - name: Lava
+    userID: 4
+    uniqueID: 1778746059
+    locked: 0
+  - name: Wall
+    userID: 5
+    uniqueID: 163127601
+    locked: 0

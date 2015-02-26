@@ -582,7 +582,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!223 &22308790
 Canvas:
@@ -599,7 +599,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!223 &22308792
 Canvas:
@@ -616,7 +616,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!223 &22308794
 Canvas:
@@ -633,7 +633,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!223 &22308796
 Canvas:
@@ -650,7 +650,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 127538681
   m_SortingOrder: 0
 --- !u!224 &22408788
 RectTransform:
