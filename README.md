@@ -8,7 +8,7 @@ Primary :
 
 - Scrolling forcé (Mathieu)
 - Background loop (Mathieu)
-- Platforme one-way collision (Nicolas)
+- ~~Platforme one-way collision (Nicolas)~~
 - Les règles du jeu (Nicolas)
 - Lave (Arnaud)
 - Les murs (Arnaud)
@@ -18,4 +18,4 @@ Primary :
 Secondary :
 
 - Les menus (démarrer une partie, régler les touches)
-- Un timer
+- ~~Un timer~~
