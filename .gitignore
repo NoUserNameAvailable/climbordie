@@ -28,3 +28,6 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 [Tt]humbs.db 
+*.csproj
+climbordie-csharp.sln
+*.sln
