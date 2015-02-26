@@ -3,6 +3,8 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - PlayerSpawn
+  - Platform
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -64,4 +66,8 @@ TagManager:
   - name: Wall
     userID: 5
     uniqueID: 163127601
+    locked: 0
+  - name: UI
+    userID: 7
+    uniqueID: 3582843401
     locked: 0
