@@ -27,6 +27,7 @@ GameObject:
   - 95: {fileID: 9515946}
   - 50: {fileID: 5015946}
   - 61: {fileID: 6115946}
+  - 61: {fileID: 6121126}
   - 114: {fileID: 11415946}
   m_Layer: 13
   m_Name: Player
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.211999997, y: -1.02900004, z: 0}
+  m_LocalPosition: {x: 1.69099998, y: -2.15799999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 415946}
@@ -84,8 +85,19 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .300000012, y: .600000024}
-  m_Center: {x: -.0399999991, y: 0}
+  m_Size: {x: .300000012, y: .349999994}
+  m_Center: {x: -.0399999991, y: .150000006}
+--- !u!61 &6121126
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115948}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .349999994, y: .300000012}
+  m_Center: {x: -.0500000007, y: -.150000006}
 --- !u!95 &9515946
 Animator:
   serializedVersion: 3
@@ -115,6 +127,9 @@ MonoBehaviour:
   speed: 2
   jumpSpeed: 5
   jumpLimit: 1
+  meltingSpeed: 1
+  minSize: {x: .5, y: .5}
+  maxSize: {x: 3, y: 3}
   oneWayCollision: 1
 --- !u!212 &21215946
 SpriteRenderer:

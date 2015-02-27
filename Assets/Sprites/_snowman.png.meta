@@ -68,7 +68,7 @@ TextureImporter:
         width: 46
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_2
       rect:
@@ -78,7 +78,7 @@ TextureImporter:
         width: 52
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_3
       rect:
@@ -88,7 +88,7 @@ TextureImporter:
         width: 53
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_4
       rect:
@@ -98,7 +98,7 @@ TextureImporter:
         width: 52
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_5
       rect:
@@ -108,7 +108,7 @@ TextureImporter:
         width: 52
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_6
       rect:
@@ -118,7 +118,7 @@ TextureImporter:
         width: 51
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

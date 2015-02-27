@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 224: {fileID: 22408788}
   - 61: {fileID: 6108790}
-  - 61: {fileID: 6108788}
   - 114: {fileID: 11408788}
   m_Layer: 10
   m_Name: GroundPlatform
@@ -193,17 +192,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &6108788
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108788}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1.29999995, y: .319999993}
-  m_Center: {x: 0, y: -.0500000007}
 --- !u!61 &6108790
 BoxCollider2D:
   m_ObjectHideFlags: 1
