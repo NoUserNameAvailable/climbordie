@@ -10,8 +10,8 @@ Primary :
 - Background loop (Mathieu)
 - ~~Platforme one-way collision (Nicolas)~~
 - Les règles du jeu (Nicolas)
-- Lave (Arnaud)
-- Les murs (Arnaud)
+- ~~Lave (Arnaud)~~
+- ~~Les murs (Arnaud)~~
 - Les objets (Guillaume)
 - Un niveau démo
 
