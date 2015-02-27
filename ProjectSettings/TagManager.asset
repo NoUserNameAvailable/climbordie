@@ -5,6 +5,7 @@ TagManager:
   tags:
   - PlayerSpawn
   - Platform
+  - Lava
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

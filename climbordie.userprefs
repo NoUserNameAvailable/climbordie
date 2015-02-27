@@ -1,10 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\lavaAnimation.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DestroyByContact.cs">
     <Files>
+      <File FileName="Assets\Scripts\OnewayCollider.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\RepeatSpriteBoundary.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Players.cs" Line="128" Column="1" />
-      <File FileName="Assets\lavaAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Players.cs" Line="24" Column="23" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="34" Column="32" />
+      <File FileName="Assets\Scripts\Snowball.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Timer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DestroyByContact.cs" Line="12" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
