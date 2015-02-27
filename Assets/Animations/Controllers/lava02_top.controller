@@ -5,13 +5,13 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Render
+  m_Name: lava02_top
   serializedVersion: 2
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
-    m_StateMachine: {fileID: 110723518}
+    m_StateMachine: {fileID: 110765012}
     m_Mask: {fileID: 0}
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
@@ -20,31 +20,31 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &110223518
+--- !u!1102 &110265012
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: lava
-  m_Speed: 1
+  m_Name: LavaTop
+  m_Speed: .400000006
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 0}
-  m_ParentStateMachine: {fileID: 110723518}
-  m_Position: {x: 50, y: 50, z: 0}
+  - {fileID: 7400000, guid: e0038706b5c729f4dbaea8527d5e0dd9, type: 2}
+  m_ParentStateMachine: {fileID: 110765012}
+  m_Position: {x: 36, y: -48, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1107 &110723518
+--- !u!1107 &110765012
 StateMachine:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110223518}
+  m_DefaultState: {fileID: 110265012}
   m_States:
-  - {fileID: 110223518}
+  - {fileID: 110265012}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions: {}

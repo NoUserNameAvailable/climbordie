@@ -26,10 +26,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22408940}
-  - 68: {fileID: 6808938}
+  - 61: {fileID: 6113220}
   m_Layer: 10
   m_Name: Wall'sRight
-  m_TagString: Platform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,8 +51,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!68 &6808938
-EdgeCollider2D:
+--- !u!61 &6113220
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -60,9 +60,8 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Points:
-  - {x: -.320029259, y: 3.04025841}
-  - {x: -.318753719, y: -3.04173994}
+  m_Size: {x: 1.29999995, y: 9}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11408938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +145,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingLayerID: 127538681
+  m_SortingLayerID: 163127601
   m_SortingOrder: 0
 --- !u!224 &22408938
 RectTransform:
@@ -173,7 +172,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22408938}
@@ -181,8 +180,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 5.76000023, y: 0}
-  m_SizeDelta: {x: .639999986, y: 6.07999992}
+  m_AnchoredPosition: {x: 6, y: .5}
+  m_SizeDelta: {x: 1.29999995, y: 9}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22408942
 RectTransform:

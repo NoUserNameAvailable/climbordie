@@ -36,7 +36,7 @@ public class Players : MonoBehaviour {
 	void Update () {
 		// Stop running
 		if (Input.GetKeyUp ("left") || Input.GetKeyUp ("right")) {
-			Vector3 movement = new Vector3 (0.0f, rigidbody2D.velocity.y, 0.0f);
+			Vector2 movement = new Vector2 (0.0f, rigidbody2D.velocity.y);
 			rigidbody2D.velocity = movement;
 		}
 
@@ -53,7 +53,7 @@ public class Players : MonoBehaviour {
 		}
 
 		if (Input.GetKey ("up") && (jump == 0 || canJump)) {
-			movement = new Vector3 (rigidbody2D.velocity.x, 1.0f * jumpSpeed, 0.0f);
+			movement = new Vector2 (rigidbody2D.velocity.x, 1.0f * jumpSpeed);
 			rigidbody2D.velocity = movement;
 			
 			jumpState = 0;
@@ -74,7 +74,7 @@ public class Players : MonoBehaviour {
 		if (Input.GetKey ("left") || Input.GetKey ("right")) {
 			float vx = (runRight) ? 1.0f : -1.0f;
 			
-			movement = new Vector3(vx * speed, rigidbody2D.velocity.y, 0.0f);
+			movement = new Vector2(vx * speed, rigidbody2D.velocity.y);
 			rigidbody2D.velocity = movement;
 
 			playerMelting ();

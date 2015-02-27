@@ -12,6 +12,7 @@ GameObject:
   - 50: {fileID: 5081186}
   - 58: {fileID: 5881186}
   - 114: {fileID: 11481186}
+  - 114: {fileID: 11425640}
   m_Layer: 12
   m_Name: Snowball
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.63999999, y: 1.66999996, z: 0}
+  m_LocalPosition: {x: -3.0999999, y: 4.30000019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,6 +58,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_Radius: .159999996
   m_Center: {x: 0, y: 0}
+--- !u!114 &11425640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46ae71ad84bdfb458c313d2cf098c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticalSpeed: -1
+  horizontalSpeed: 0
 --- !u!114 &11481186
 MonoBehaviour:
   m_ObjectHideFlags: 1
