@@ -167,4 +167,33 @@ public class Players : MonoBehaviour {
 		}
 	}
 
+	/****************
+	 * 
+	 * CODE BONUS/MALUS
+	 * 
+	 */
+	
+	public void setSpeed(int newSpeed){
+		
+		this.speed = newSpeed;
+		
+	}
+	
+	public void setJumpSpeed(int newJumpSpeed){
+		
+		this.jumpSpeed = newJumpSpeed;
+		
+	}
+	
+	void OnTriggerEnter2D (Collider2D col){
+		
+		if (col.gameObject.tag == "Bonus" || col.gameObject.tag == "Malus") {
+			
+			col.gameObject.SendMessage("applyEffect", this);
+			Destroy(col.gameObject);
+			
+		}
+		
+	}
+
 }
