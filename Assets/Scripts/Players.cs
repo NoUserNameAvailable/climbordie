@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Players : MonoBehaviour {
 
 	// Player stats
-	public int speed;
-	public int jumpSpeed;
+	public float speed;
+	public float jumpSpeed;
 	public int jumpLimit;
 	public int meltingSpeed;
 
@@ -165,35 +165,6 @@ public class Players : MonoBehaviour {
 				jump = 1;
 			}
 		}
-	}
-
-	/****************
-	 * 
-	 * CODE BONUS/MALUS
-	 * 
-	 */
-	
-	public void setSpeed(int newSpeed){
-		
-		this.speed = newSpeed;
-		
-	}
-	
-	public void setJumpSpeed(int newJumpSpeed){
-		
-		this.jumpSpeed = newJumpSpeed;
-		
-	}
-	
-	void OnTriggerEnter2D (Collider2D col){
-		
-		if (col.gameObject.tag == "Bonus" || col.gameObject.tag == "Malus") {
-			
-			col.gameObject.SendMessage("applyEffect", this);
-			Destroy(col.gameObject);
-			
-		}
-		
 	}
 
 }

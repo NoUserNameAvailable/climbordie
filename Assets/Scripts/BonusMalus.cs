@@ -3,15 +3,24 @@ using System.Collections;
 
 public class BonusMalus : MonoBehaviour {
 
-	public int newSpeed = 2; 
-	public int newJumpSpeed = 5; 
-	
-	public void applyEffect(Players p){
+	public float newSpeed; 
+	public float newJumpSpeed;
 
-		//print (p.speed);
-		if(this.newSpeed!=-1) p.setSpeed (this.newSpeed);
-		if(this.newJumpSpeed!=-1) p.setJumpSpeed (this.newJumpSpeed);
 
+	void OnTriggerEnter2D (Collider2D col){
+		
+		if (col.gameObject.tag == "Player") {
+			Players player = col.gameObject.GetComponent<Players>();
+
+			if(this.newSpeed != -1)
+				player.speed = newSpeed;
+
+			if(this.newJumpSpeed!=-1)
+				player.jumpSpeed = newJumpSpeed;
+
+			Destroy(this.gameObject);
+		}
+		
 	}
 
 }

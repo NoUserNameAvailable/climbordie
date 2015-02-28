@@ -85,6 +85,9 @@ public class GameController : MonoBehaviour {
 		// Active lava
 		DynamicMover lavaMover = lava.GetComponent<DynamicMover> ();
 		lavaMover.verticalSpeed = 0.2f;
+
+		// Game running
+		gameRunning = true;
 	}
 
 	public void EndGame() {
