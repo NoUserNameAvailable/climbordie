@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
 
 	private GameObject lava;
 	private GameObject player;
+	private CameraController cameraControl;
 
 	// GUI
 	private GameObject timer;
@@ -58,6 +59,10 @@ public class GameController : MonoBehaviour {
 		player = Instantiate (playerPrefab, spawn.transform.position, Quaternion.identity) as GameObject;
 		player.SetActive (false);
 		spawn.SetActive (false);
+
+		// Find camera
+		cameraControl = Camera.main.GetComponent<CameraController> ();
+		cameraControl.setPlayer (player);
 	}
 
 	void Update() {
@@ -73,6 +78,9 @@ public class GameController : MonoBehaviour {
 		if (startText != null)
 			startText.SetActive (false);
 
+		// Active camera
+		cameraControl.speed = 0.3f;
+
 		// Active player
 		player.SetActive (true);
 
@@ -84,13 +92,17 @@ public class GameController : MonoBehaviour {
 
 		// Active lava
 		DynamicMover lavaMover = lava.GetComponent<DynamicMover> ();
-		lavaMover.verticalSpeed = 0.2f;
+		lavaMover.verticalSpeed = 0.3f;
 
 		// Game running
 		gameRunning = true;
 	}
 
-	public void EndGame() {
+	public IEnumerator EndGame() {
+		// Disable camera scrolling
+		cameraControl.setPlayer (null);
+		cameraControl.speed = 0.0f;
+
 		// Disable player
 		player.SetActive(false);
 
@@ -101,6 +113,8 @@ public class GameController : MonoBehaviour {
 		}
 
 		// Freeze lava
+		yield return new WaitForSeconds(1.5f);
+
 		DynamicMover lavaMover = lava.GetComponent<DynamicMover> ();
 		lavaMover.verticalSpeed = 0.0f;
 

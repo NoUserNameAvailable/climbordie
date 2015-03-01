@@ -6,7 +6,6 @@ public class BonusMalus : MonoBehaviour {
 	public float newSpeed; 
 	public float newJumpSpeed;
 
-
 	void OnTriggerEnter2D (Collider2D col){
 		
 		if (col.gameObject.tag == "Player") {
@@ -17,7 +16,7 @@ public class BonusMalus : MonoBehaviour {
 
 			if(this.newJumpSpeed!=-1)
 				player.jumpSpeed = newJumpSpeed;
-
+		
 			Destroy(this.gameObject);
 		}
 		

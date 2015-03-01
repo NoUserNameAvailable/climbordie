@@ -14,6 +14,11 @@ public class Players : MonoBehaviour {
 	public Vector2 minSize;
 	public Vector2 maxSize;
 
+	// Player SFX
+	public AudioClip jumpAudio;
+	public AudioClip runAudio;
+	public AudioClip sizeupAudio;
+
 	// For one-way collision
 	public bool oneWayCollision;
 
@@ -55,6 +60,8 @@ public class Players : MonoBehaviour {
 		if (Input.GetKey ("up") && (jump == 0 || canJump)) {
 			movement = new Vector2 (rigidbody2D.velocity.x, 1.0f * jumpSpeed);
 			rigidbody2D.velocity = movement;
+
+			playSFX("jump");
 			
 			jumpState = 0;
 			canJump = false;
@@ -125,6 +132,7 @@ public class Players : MonoBehaviour {
 
 		Vector3 scale = new Vector3(sx, sy, transform.localScale.z);
 		transform.localScale = scale;
+		playSFX("sizeup");
 	}
 
 	// Make it jump !
@@ -146,8 +154,9 @@ public class Players : MonoBehaviour {
 		float velocityX = rigidbody2D.velocity.x;
 		float velocityY = rigidbody2D.velocity.y;
 
-		if (velocityX != 0) {
+		if (velocityX != 0 && velocityY == 0) {
 			animator.SetTrigger ("run");
+			playSFX("run");
 		} else {
 			animator.SetTrigger("stay");
 		}
@@ -155,7 +164,7 @@ public class Players : MonoBehaviour {
 		if (velocityY > 0) {
 			animator.SetTrigger("jump");
 		}
-		if (velocityY < 0) {
+		if (velocityY < -0.1f) {
 			animator.ResetTrigger("jump");
 			animator.SetTrigger("fall");
 
@@ -163,6 +172,24 @@ public class Players : MonoBehaviour {
 			if (jump == 0) {
 				jumpState = 1;
 				jump = 1;
+			}
+		}
+	}
+
+	// Play audio clip
+	void playSFX(string name) {
+		if (name == "jump") {
+			audio.clip = jumpAudio;
+			audio.Play();
+		} 
+		else if (name == "sizeup") {
+			audio.clip = sizeupAudio;
+			audio.Play();
+		}
+		else if (name == "run") {
+			if ( ! audio.isPlaying) {
+				audio.clip = runAudio;
+				audio.Play();
 			}
 		}
 	}
