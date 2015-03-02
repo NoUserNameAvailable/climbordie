@@ -111,7 +111,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22492952, guid: a919e487e3e1d954eb5a76dd21852708, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 22492952, guid: a919e487e3e1d954eb5a76dd21852708, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -180,6 +180,10 @@ Prefab:
     - target: {fileID: 6122980, guid: a919e487e3e1d954eb5a76dd21852708, type: 2}
       propertyPath: m_Size.y
       value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 192952, guid: a919e487e3e1d954eb5a76dd21852708, type: 2}
+      propertyPath: m_TagString
+      value: WallLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a919e487e3e1d954eb5a76dd21852708, type: 2}
@@ -261,7 +265,7 @@ GameObject:
   - 61: {fileID: 24984732}
   m_Layer: 10
   m_Name: Wall'sLeft
-  m_TagString: Untagged
+  m_TagString: WallLeft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,7 +283,7 @@ RectTransform:
   m_Children:
   - {fileID: 1013656445}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -6, y: 2.01999998}
@@ -4159,7 +4163,7 @@ RectTransform:
   - {fileID: 243552057}
   - {fileID: 1378937846}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -3.68000007, y: 1.86000001}
@@ -4313,10 +4317,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1741146684}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: .649999976, y: -12.0150003}
+  m_SizeDelta: {x: 1.29999995, y: 24.0300007}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &482275419
 GameObject:
@@ -5824,7 +5828,7 @@ RectTransform:
   - {fileID: 1840183977}
   - {fileID: 574723267}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -.230000004, y: -1.77999997}
@@ -6367,7 +6371,7 @@ RectTransform:
   m_Children:
   - {fileID: 1206841030}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -1.94000006, y: -.930000007}
@@ -9650,7 +9654,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22408940, guid: 6bc5e35b5aea68c4daba2d3741b3e4c3, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 22408940, guid: 6bc5e35b5aea68c4daba2d3741b3e4c3, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -11950,10 +11954,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1013656445}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: .649999976, y: -12}
+  m_SizeDelta: {x: 1.29999995, y: 24}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1224164967
 GameObject:
@@ -17878,7 +17882,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
 --- !u!114 &1894425308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19280,6 +19284,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11478448, guid: 584fc0ed99f774d4da7e3859b5ae4c7d, type: 2}
+      propertyPath: followMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478448, guid: 584fc0ed99f774d4da7e3859b5ae4c7d, type: 2}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 584fc0ed99f774d4da7e3859b5ae4c7d, type: 2}
   m_RootGameObject: {fileID: 1894425302}
@@ -19617,7 +19629,7 @@ GameObject:
   - 61: {fileID: 2038989927}
   m_Layer: 10
   m_Name: Wall'sRight
-  m_TagString: Untagged
+  m_TagString: WallRight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19635,7 +19647,7 @@ RectTransform:
   m_Children:
   - {fileID: 1741146684}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 6, y: 2.00999999}
@@ -19755,6 +19767,10 @@ Prefab:
     - target: {fileID: 406288, guid: 8f61e165054346a4686de7411cf9ca02, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 106288, guid: 8f61e165054346a4686de7411cf9ca02, type: 2}
+      propertyPath: m_TagString
+      value: PlayerSpawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f61e165054346a4686de7411cf9ca02, type: 2}
