@@ -15,6 +15,8 @@ public class Players : MonoBehaviour {
 	public Vector2 maxSize;
 
 	// Player SFX
+	private AudioSource audioSource;
+
 	public AudioClip jumpAudio;
 	public AudioClip runAudio;
 	public AudioClip sizeupAudio;
@@ -39,6 +41,7 @@ public class Players : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator>();
+		audioSource = GetComponent<AudioSource> ();
 	}
 
 	void Update () {
@@ -206,17 +209,17 @@ public class Players : MonoBehaviour {
 	// Play audio clip
 	void playSFX(string name) {
 		if (name == "jump") {
-			audio.clip = jumpAudio;
-			audio.Play();
+			audioSource.clip = jumpAudio;
+			audioSource.Play();
 		} 
 		else if (name == "sizeup") {
-			audio.clip = sizeupAudio;
-			audio.Play();
+			audioSource.clip = sizeupAudio;
+			audioSource.Play();
 		}
 		else if (name == "run") {
-			if ( ! audio.isPlaying) {
-				audio.clip = runAudio;
-				audio.Play();
+			if ( ! audioSource.isPlaying) {
+				audioSource.clip = runAudio;
+				audioSource.Play();
 			}
 		}
 	}

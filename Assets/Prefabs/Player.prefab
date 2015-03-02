@@ -109,7 +109,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 9888493f0d0a264419a2d6d198866b83, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   minSize: {x: .5, y: .5}
   maxSize: {x: 3, y: 3}
   jumpAudio: {fileID: 8300000, guid: 9888493f0d0a264419a2d6d198866b83, type: 3}
-  runAudio: {fileID: 8300000, guid: b921f32461a0de848a2969c7d0d7e8c0, type: 3}
+  runAudio: {fileID: 8300000, guid: 25cea240375693f4492bb5abedcae1b5, type: 3}
   sizeupAudio: {fileID: 8300000, guid: bc131c9a83356644f96024b279c337f6, type: 3}
   oneWayCollision: 1
 --- !u!212 &21215946
