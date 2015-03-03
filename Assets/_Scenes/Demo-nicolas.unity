@@ -1538,7 +1538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSpeed: 2
   newJumpSpeed: 5
-  doubleJump: 0
+  doubleJump: 1
   time: 0
 --- !u!60 &153771242
 PolygonCollider2D:
@@ -6141,6 +6141,10 @@ Prefab:
     - target: {fileID: 472668, guid: c3a52ae7dfab9424bb3d82d1c82d4f1a, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462602, guid: c3a52ae7dfab9424bb3d82d1c82d4f1a, type: 2}
+      propertyPath: doubleJump
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c3a52ae7dfab9424bb3d82d1c82d4f1a, type: 2}

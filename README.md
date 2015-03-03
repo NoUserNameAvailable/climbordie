@@ -21,14 +21,14 @@ Secondary :
 
 10/03 :
 
-- Level prefab (ground) (level 1-3) x2
-- Level prefab (grass) (level 1-3) x2
-- Level prefab (rock) (level 1-3)
+- Level prefab (ground) (level 1-3) x2 (Mathieu)
+- Level prefab (grass) (level 1-3) x2 (Guillaume)
+- Level prefab (rock) (level 1-3) (Arnaud)
 
-- Génération procédural de la map (level 1-3)
+- Génération procédural de la map (level 1-3) (Nicolas)
 
-- Platform mouvente
-- Ice platform (fond à l'approche de la lave)
+- Platform mouvente (Nicolas)
+- Ice platform (fond à l'approche de la lave) (Arnaud)
 - (Pic)
 - (Platform tombante)
 

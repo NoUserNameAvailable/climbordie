@@ -42,7 +42,7 @@ public class BonusMalus : MonoBehaviour {
 	}
 
 	void Update(){
-		if (collide) {
+		if (collide && player != null) {
 			timeNow = Time.realtimeSinceStartup;
 			if ((timeNow - timeOld) > time) {
 				if(newSpeed != -1)
