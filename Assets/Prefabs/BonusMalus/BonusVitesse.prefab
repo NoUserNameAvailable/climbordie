@@ -70,6 +70,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSpeed: 2
   newJumpSpeed: 5
+  doubleJump: 0
+  time: 3
 --- !u!212 &21272668
 SpriteRenderer:
   m_ObjectHideFlags: 1
