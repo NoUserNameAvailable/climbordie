@@ -34,9 +34,12 @@ public class BonusMalus : MonoBehaviour {
 
 			if(doubleJump) 
 				player.jumpLimit = 2 ;
+		
+			this.renderer.enabled = false;
+
 		}
 
-		this.renderer.enabled = false;
+
 
 		
 	}
