@@ -1,0 +1,1158 @@
+fileFormatVersion: 2
+guid: e997812957da06f478e00b7986e32d67
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: coffre_neoriceisgood_0
+    21300002: coffre_neoriceisgood_1
+    21300004: coffre_neoriceisgood_2
+    21300006: coffre_neoriceisgood_3
+    21300008: coffre_neoriceisgood_4
+    21300010: coffre_neoriceisgood_5
+    21300012: coffre_neoriceisgood_6
+    21300014: coffre_neoriceisgood_7
+    21300016: coffre_neoriceisgood_8
+    21300018: coffre_neoriceisgood_9
+    21300020: coffre_neoriceisgood_10
+    21300022: coffre_neoriceisgood_11
+    21300024: coffre_neoriceisgood_12
+    21300026: coffre_neoriceisgood_13
+    21300028: coffre_neoriceisgood_14
+    21300030: coffre_neoriceisgood_15
+    21300032: coffre_neoriceisgood_16
+    21300034: coffre_neoriceisgood_17
+    21300036: coffre_neoriceisgood_18
+    21300038: coffre_neoriceisgood_19
+    21300040: coffre_neoriceisgood_20
+    21300042: coffre_neoriceisgood_21
+    21300044: coffre_neoriceisgood_22
+    21300046: coffre_neoriceisgood_23
+    21300048: coffre_neoriceisgood_24
+    21300050: coffre_neoriceisgood_25
+    21300052: coffre_neoriceisgood_26
+    21300054: coffre_neoriceisgood_27
+    21300056: coffre_neoriceisgood_28
+    21300058: coffre_neoriceisgood_29
+    21300060: coffre_neoriceisgood_30
+    21300062: coffre_neoriceisgood_31
+    21300064: coffre_neoriceisgood_32
+    21300066: coffre_neoriceisgood_33
+    21300068: coffre_neoriceisgood_34
+    21300070: coffre_neoriceisgood_35
+    21300072: coffre_neoriceisgood_36
+    21300074: coffre_neoriceisgood_37
+    21300076: coffre_neoriceisgood_38
+    21300078: coffre_neoriceisgood_39
+    21300080: coffre_neoriceisgood_40
+    21300082: coffre_neoriceisgood_41
+    21300084: coffre_neoriceisgood_42
+    21300086: coffre_neoriceisgood_43
+    21300088: coffre_neoriceisgood_44
+    21300090: coffre_neoriceisgood_45
+    21300092: coffre_neoriceisgood_46
+    21300094: coffre_neoriceisgood_47
+    21300096: coffre_neoriceisgood_48
+    21300098: coffre_neoriceisgood_49
+    21300100: coffre_neoriceisgood_50
+    21300102: coffre_neoriceisgood_51
+    21300104: coffre_neoriceisgood_52
+    21300106: coffre_neoriceisgood_53
+    21300108: coffre_neoriceisgood_54
+    21300110: coffre_neoriceisgood_55
+    21300112: coffre_neoriceisgood_56
+    21300114: coffre_neoriceisgood_57
+    21300116: coffre_neoriceisgood_58
+    21300118: coffre_neoriceisgood_59
+    21300120: coffre_neoriceisgood_60
+    21300122: coffre_neoriceisgood_61
+    21300124: coffre_neoriceisgood_62
+    21300126: coffre_neoriceisgood_63
+    21300128: coffre_neoriceisgood_64
+    21300130: coffre_neoriceisgood_65
+    21300132: coffre_neoriceisgood_66
+    21300134: coffre_neoriceisgood_67
+    21300136: coffre_neoriceisgood_68
+    21300138: coffre_neoriceisgood_69
+    21300140: coffre_neoriceisgood_70
+    21300142: coffre_neoriceisgood_71
+    21300144: coffre_neoriceisgood_72
+    21300146: coffre_neoriceisgood_73
+    21300148: coffre_neoriceisgood_74
+    21300150: coffre_neoriceisgood_75
+    21300152: coffre_neoriceisgood_76
+    21300154: coffre_neoriceisgood_77
+    21300156: coffre_neoriceisgood_78
+    21300158: coffre_neoriceisgood_79
+    21300160: coffre_neoriceisgood_80
+    21300162: coffre_neoriceisgood_81
+    21300164: coffre_neoriceisgood_82
+    21300166: coffre_neoriceisgood_83
+    21300168: coffre_neoriceisgood_84
+    21300170: coffre_neoriceisgood_85
+    21300172: coffre_neoriceisgood_86
+    21300174: coffre_neoriceisgood_87
+    21300176: coffre_neoriceisgood_88
+    21300178: coffre_neoriceisgood_89
+    21300180: coffre_neoriceisgood_90
+    21300182: coffre_neoriceisgood_91
+    21300184: coffre_neoriceisgood_92
+    21300186: coffre_neoriceisgood_93
+    21300188: coffre_neoriceisgood_94
+    21300190: coffre_neoriceisgood_95
+    21300192: coffre_neoriceisgood_96
+    21300194: coffre_neoriceisgood_97
+    21300196: coffre_neoriceisgood_98
+    21300198: coffre_neoriceisgood_99
+    21300200: coffre_neoriceisgood_100
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: coffre_neoriceisgood_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 600
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 600
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 600
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_3
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 598
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 600
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 600
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_6
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 600
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_7
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 600
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 600
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_9
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 600
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 534
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 534
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_12
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 534
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_13
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 534
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 534
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_15
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 534
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_16
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 532
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_17
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 534
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_18
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 532
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_19
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 534
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 468
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_21
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 468
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 468
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_23
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 468
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_24
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 468
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_25
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 468
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_26
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 468
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_27
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 468
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_28
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 468
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_29
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_30
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 402
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_31
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 402
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 402
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_33
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 402
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_34
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 402
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_35
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 402
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_36
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 402
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_37
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 402
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_38
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 400
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_39
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 402
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_40
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 336
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_42
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 336
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_43
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 366
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_44
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 336
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_45
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 336
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_46
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 336
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_47
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 336
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_48
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 336
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_49
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 336
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_50
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 336
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_51
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 270
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_52
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 270
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_53
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 270
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_54
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 270
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_55
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 270
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_56
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 270
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_57
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 270
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_58
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 270
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_59
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 270
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_60
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 270
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_61
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 204
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_62
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 204
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_63
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 206
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_64
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 204
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_65
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 204
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_66
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 204
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_67
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 206
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_68
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 204
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_69
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 204
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_70
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 204
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_71
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 138
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_72
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 138
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_73
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 138
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_74
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 138
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_75
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 138
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_76
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 140
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_77
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 142
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_78
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 142
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_79
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 144
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_80
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 146
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_81
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 76
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_82
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 74
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_83
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 74
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_84
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 76
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_85
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 74
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_86
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 76
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_87
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 72
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_88
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 72
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_89
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 72
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_90
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 72
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_91
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_92
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 10
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_93
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 12
+        width: 58
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_94
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 6
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_95
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 6
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_96
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 8
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_97
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 6
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_98
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 10
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_99
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 12
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: coffre_neoriceisgood_100
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 8
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

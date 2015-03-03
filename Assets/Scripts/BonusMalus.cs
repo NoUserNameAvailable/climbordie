@@ -7,13 +7,14 @@ public class BonusMalus : MonoBehaviour {
 	public float newJumpSpeed;
 	public bool doubleJump ;
 	public float time ;
-
+	public GameObject animator ;
 
 
 	private float timeOld ;
 	private float timeNow ;
 	private Players player;
 	private bool collide ;
+	private bool activate = false ;
 
 	void start(){
 		timeNow = Time.realtimeSinceStartup;
@@ -23,6 +24,13 @@ public class BonusMalus : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D col){
 		collide = true;
 		if (col.gameObject.tag == "Player") {
+
+			if(!activate){
+				animator.transform.position = this.transform.position ;
+				Instantiate(animator);
+				activate = true ;
+			}
+
 			timeOld = Time.realtimeSinceStartup;
 			player = col.gameObject.GetComponent<Players>();
 
@@ -43,6 +51,7 @@ public class BonusMalus : MonoBehaviour {
 
 		
 	}
+
 
 	void Update(){
 		if (collide && player != null) {
