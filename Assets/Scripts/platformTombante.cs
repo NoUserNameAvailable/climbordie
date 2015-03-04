@@ -9,6 +9,8 @@ public class platformTombante : MonoBehaviour {
 	private bool collide ;
 	private float timeOld ;
 	private float timeNow ;
+	private bool turn ;
+	private int i ;
 
 	// Player SFX
 	private AudioSource audioSource;
@@ -18,6 +20,8 @@ public class platformTombante : MonoBehaviour {
 
 	void Start(){
 		collide = false ;
+		turn = true ;
+		i = 0;
 			audioSource = GetComponent<AudioSource> ();
 	}
 
@@ -31,6 +35,7 @@ public class platformTombante : MonoBehaviour {
 	}
 
 	void Update(){
+
 		if (collide) {
 		//	print("ok on est en colision update");
 			timeNow = Time.realtimeSinceStartup;
@@ -40,6 +45,21 @@ public class platformTombante : MonoBehaviour {
 				this.collider2D.enabled = false ;
 				collide = false ;
 				playSFX("chute");
+			}
+			else{
+				if(turn && i== 5){
+					transform.position = new Vector3(transform.position.x,transform.position.y+(0.06f*(timeNow - timeOld)),transform.position.z);
+					turn = false ;
+					i=0;
+				}
+				else if(!turn && i== 10){
+					transform.position = new Vector3(transform.position.x,transform.position.y-(0.049f*(timeNow - timeOld)),transform.position.z);
+					turn = true ;
+					i=0;
+				}
+				else{
+					i++;
+				}
 			}
 		}
 
