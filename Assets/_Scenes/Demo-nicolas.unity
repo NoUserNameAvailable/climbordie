@@ -1539,7 +1539,7 @@ MonoBehaviour:
   newSpeed: 2
   newJumpSpeed: 5
   doubleJump: 1
-  time: 0
+  time: 3
 --- !u!60 &153771242
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6357,6 +6357,8 @@ GameObject:
   - 224: {fileID: 715945749}
   - 61: {fileID: 715945752}
   - 114: {fileID: 715945750}
+  - 114: {fileID: 715945751}
+  - 50: {fileID: 715945753}
   m_Layer: 10
   m_Name: IcecubePlatform
   m_TagString: Platform
@@ -6396,6 +6398,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
+--- !u!114 &715945751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715945748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c715d1ba4c9f43f4592c56e3e7221dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticalSpeed: 0
+  horizontalSpeed: 1
+  movingTo: {x: 5, y: 0}
+  speed: 1
+  side: 1
 --- !u!61 &715945752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6408,6 +6426,21 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.27999997, y: .319999993}
   m_Center: {x: 0, y: 0}
+--- !u!50 &715945753
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715945748}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 1
+  m_FixedAngle: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &717193587
 GameObject:
   m_ObjectHideFlags: 0
@@ -18622,7 +18655,7 @@ MonoBehaviour:
   newSpeed: .5
   newJumpSpeed: 5
   doubleJump: 0
-  time: 0
+  time: 3
 --- !u!60 &1950116124
 PolygonCollider2D:
   m_ObjectHideFlags: 0
