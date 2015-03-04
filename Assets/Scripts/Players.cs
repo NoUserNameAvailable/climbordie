@@ -38,6 +38,9 @@ public class Players : MonoBehaviour {
 	// Rotate sprite when run left
 	private bool runRight = false;
 
+	// Grounded status
+	private bool isGrounded;
+
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator>();
@@ -103,18 +106,20 @@ public class Players : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other) {
 		if (other.gameObject.tag == "WallRight") {
 			canRunRight = false;
-		}
-		if (other.gameObject.tag == "WallLeft") {
+		} else if (other.gameObject.tag == "WallLeft") {
 			canRunLeft = false;
+		} else if (other.gameObject.tag == "Platform") {
+			isGrounded = true;
 		}
 	}
 	
 	void OnCollisionExit2D(Collision2D other) {
 		if (other.gameObject.tag == "WallRight") {
 			canRunRight = true;
-		}
-		if (other.gameObject.tag == "WallLeft") {
+		} else if (other.gameObject.tag == "WallLeft") {
 			canRunLeft = true;
+		} else if (other.gameObject.tag == "Platform") {
+			isGrounded = false;
 		}
 	}
 	
@@ -172,7 +177,7 @@ public class Players : MonoBehaviour {
 		}
 
 		// Back to beginning
-		if (jump > 0 && jumpState == 1 && rigidbody2D.velocity.y == 0) {
+		if (jump > 0 && jumpState == 1 && isGrounded) {
 			animator.ResetTrigger("fall");
 			animator.SetTrigger ("landing");
 			jump = 0;
@@ -186,17 +191,17 @@ public class Players : MonoBehaviour {
 
 		if (velocityX != 0 && velocityY == 0) {
 			animator.SetTrigger ("run");
-			playSFX("run");
+			playSFX ("run");
 		} else {
-			animator.SetTrigger("stay");
+			animator.SetTrigger ("stay");
 		}
 
 		if (velocityY > 0) {
-			animator.SetTrigger("jump");
+			animator.SetTrigger ("jump");
 		}
-		if (velocityY < -0.1f) {
-			animator.ResetTrigger("jump");
-			animator.SetTrigger("fall");
+		if (velocityY < -0f && ! isGrounded) {
+			animator.ResetTrigger ("jump");
+			animator.SetTrigger ("fall");
 
 			// When player fall is jump (animation and block player jumping)
 			if (jump == 0) {
