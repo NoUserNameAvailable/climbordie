@@ -30,7 +30,7 @@ Secondary :
 - Platform mouvente (Nicolas)
 - Ice platform (fond à l'approche de la lave) (Arnaud)
 - (Pic)
-- (Platform tombante)
+- (Platform tombante) ( Arnaud )
 
 17/03 :
 
