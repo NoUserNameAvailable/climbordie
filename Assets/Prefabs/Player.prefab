@@ -192,6 +192,7 @@ MonoBehaviour:
   jumpAudio: {fileID: 8300000, guid: 9888493f0d0a264419a2d6d198866b83, type: 3}
   runAudio: {fileID: 8300000, guid: 25cea240375693f4492bb5abedcae1b5, type: 3}
   sizeupAudio: {fileID: 8300000, guid: bc131c9a83356644f96024b279c337f6, type: 3}
+  playerHit: {fileID: 8300000, guid: 963e0671aeb32dd43ade23c96ce2f95f, type: 3}
   oneWayCollision: 1
 --- !u!212 &21215946
 SpriteRenderer:

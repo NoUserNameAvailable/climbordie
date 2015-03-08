@@ -5,24 +5,33 @@ public class GameController : MonoBehaviour {
 
 	// GameObject
 	public GameObject playerPrefab;
-	public GameObject gameUIPrefab;
 	public GameObject lavaPrefab;
 
 	private GameObject lava;
 	private GameObject player;
+	private Players playerObj;
+
 	private CameraController cameraControl;
 
 	// GUI
-	private GameObject timer;
-	private GameObject startText;
-	private GameObject endText;
+	public GameObject gameUIPrefab;
+	private GameUIManager uimanager;
 
 	// Game state
+	public int level = 0;
+	public int meterPerLevel;
+
+	private int nextLevel;
+	private int meter = 0;
+
 	private bool gameRunning = false;
 	private bool gameEnd = false;
 
 	// GameController instance
 	private static GameController controller;
+
+	// Erase counter
+	private int eraseLevelFrame;
 
 	// Use this for initialization
 	void Awake () {
@@ -33,20 +42,11 @@ public class GameController : MonoBehaviour {
 			controller = this;
 
 		// Create game GUI
-		Instantiate(gameUIPrefab, Vector3.zero, Quaternion.identity);
+		GameObject ui = Instantiate(gameUIPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+		uimanager = ui.GetComponent<GameUIManager> ();
 
-		// Get timer
-		timer = GameObject.Find("Timer");
-		
 		// Active start text
-		startText = GameObject.Find ("StartText");
-		if (startText != null)
-			startText.SetActive(true);
-
-		// Disable end text
-		endText = GameObject.Find ("EndText");
-		if (endText != null)
-			endText.SetActive (false);
+		uimanager.toggleStartText (true);
 
 		// Create lava
 		RectTransform lavaRect = lavaPrefab.GetComponent<RectTransform> ();
@@ -57,26 +57,66 @@ public class GameController : MonoBehaviour {
 
 		// Spawn player
 		player = Instantiate (playerPrefab, spawn.transform.position, Quaternion.identity) as GameObject;
+		playerObj = player.GetComponent<Players> ();
+
 		player.SetActive (false);
 		spawn.SetActive (false);
 
 		// Find camera
 		cameraControl = Camera.main.GetComponent<CameraController> ();
 		cameraControl.setPlayer (player);
+
+		nextLevel = meterPerLevel;
 	}
 
 	void Update() {
 		if (! gameRunning && Input.GetKey (KeyCode.Return))
-			StartGame ();
+			StartCoroutine(this.StartGame());
 
 		if (gameEnd && Input.GetKeyDown (KeyCode.R))
 			Application.LoadLevel (Application.loadedLevel);
+
+		if (gameRunning && player != null) {
+			// Update meter count
+			if (player.transform.position.y > meter) {
+				meter = (int)player.transform.position.y;
+				uimanager.updateMeter (meter);
+			}
+
+			// Update current level
+			if (player.transform.position.y >= nextLevel) {
+				level += 1;
+				nextLevel += meterPerLevel;
+
+				GetComponent<LevelManager>().currentLevel = level;
+				uimanager.updateLevel(level);
+			}
+
+			// Update lava position (for more chalenge)
+			if (lava.transform.position.y + 27 < player.transform.position.y) {
+				lava.transform.position = new Vector3(lava.transform.position.x, player.transform.position.y - 27, lava.transform.position.z);
+			}
+
+			// Erase level (only 1 frame of 10)
+			if (eraseLevelFrame % 10 == 0) {
+				GameObject[] levelsInMap = GameObject.FindGameObjectsWithTag("Level");
+
+				foreach (GameObject obj in levelsInMap) {
+					if (obj.transform.position.y < lava.transform.position.y)
+						Destroy(obj);
+				}
+
+				eraseLevelFrame = 0;
+			}
+
+			eraseLevelFrame++;
+		}
 	}
 
-	void StartGame() {
-		// Hide start text
-		if (startText != null)
-			startText.SetActive (false);
+	IEnumerator StartGame() {
+		playerObj.setObs(uimanager.getHealthObs());
+		uimanager.toggleStartText (false);
+		uimanager.togglePlayUI (true);
 
 		// Active camera
 		cameraControl.speed = 0.3f;
@@ -85,12 +125,10 @@ public class GameController : MonoBehaviour {
 		player.SetActive (true);
 
 		// Active and start timer
-		if (timer != null) {
-			Timer timerObj = timer.GetComponent<Timer>();
-			timerObj.stop = false;
-		}
+		uimanager.startGame();
 
 		// Active lava
+		yield return new WaitForSeconds(2f);
 		DynamicMover lavaMover = lava.GetComponent<DynamicMover> ();
 		lavaMover.verticalSpeed = 0.3f;
 
@@ -104,13 +142,10 @@ public class GameController : MonoBehaviour {
 		cameraControl.speed = 0.0f;
 
 		// Disable player
-		player.SetActive(false);
+		Destroy (player);
 
-		// Stop timer
-		if (timer != null) {
-			Timer timerObj = timer.GetComponent<Timer>();
-			timerObj.stop = true;
-		}
+		// End game ui
+		uimanager.endGame ();
 
 		// Freeze lava
 		yield return new WaitForSeconds(1.5f);
@@ -119,11 +154,14 @@ public class GameController : MonoBehaviour {
 		lavaMover.verticalSpeed = 0.0f;
 
 		// Show gameover
-		if (endText != null)
-			endText.SetActive (true);
+		uimanager.toggleEndText (true);
 
 		// Set game end
 		gameEnd = true;
+	}
+
+	public void playerDie() {
+		StartCoroutine(controller.EndGame());
 	}
 
 	// Get controller instance

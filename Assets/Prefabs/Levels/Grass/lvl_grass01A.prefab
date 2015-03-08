@@ -112,7 +112,7 @@ GameObject:
   - 61: {fileID: 6108280}
   m_Layer: 10
   m_Name: Wall'sLeft
-  m_TagString: Wall
+  m_TagString: WallLeft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3069,7 +3069,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.679945529, y: .0256424323, z: 0}
+  m_LocalPosition: {x: 0, y: 18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408288}
@@ -3085,7 +3085,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.00255745649, y: -.0704018772, z: 0}
+  m_LocalPosition: {x: -.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22417586}
@@ -10152,7 +10152,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 6.67994547, y: -.0256424323}
+  m_AnchoredPosition: {x: 6, y: 0}
   m_SizeDelta: {x: 1.29999995, y: 9}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22408194
@@ -10205,7 +10205,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -5.32005453, y: -.0256424323}
+  m_AnchoredPosition: {x: -6, y: 0}
   m_SizeDelta: {x: 1.29999995, y: 9}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22408200
@@ -10258,7 +10258,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: .679945529, y: -.0256424323}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 13, y: 9}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22408206

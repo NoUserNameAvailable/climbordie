@@ -20,6 +20,7 @@ public class Players : MonoBehaviour {
 	public AudioClip jumpAudio;
 	public AudioClip runAudio;
 	public AudioClip sizeupAudio;
+	public AudioClip playerHit;
 
 	// For one-way collision
 	public bool oneWayCollision;
@@ -40,6 +41,9 @@ public class Players : MonoBehaviour {
 
 	// Grounded status
 	private bool isGrounded;
+
+	// Observer for healthbar
+	private IPlayerObserver obs;
 
 	// Use this for initialization
 	void Start () {
@@ -101,6 +105,9 @@ public class Players : MonoBehaviour {
 
 			playerMelting ();
 		}
+
+		// Update observer
+		obs.PlayerUpdate (this);
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
@@ -140,10 +147,7 @@ public class Players : MonoBehaviour {
 			float sizeFactor = Mathf.Floor(transform.localScale.y + 1);
 			float sx;
 
-			if (transform.localScale.x > 0)
-				sx = transform.localScale.x - (0.0003f * meltingSpeed * sizeFactor);
-			else 
-				sx = transform.localScale.x + (0.0003f * meltingSpeed * sizeFactor);
+			sx = transform.localScale.x - (0.0003f * meltingSpeed * sizeFactor * Mathf.Sign(transform.localScale.x));
 
 			Vector3 scale = new Vector3 (
 				sx,
@@ -152,6 +156,28 @@ public class Players : MonoBehaviour {
 			);
 
 			transform.localScale = scale;
+		}
+	}
+
+	public void takeDamage(float damage) {
+		if (audioSource.enabled)
+			playSFX ("hit");
+
+		if (Mathf.Abs (transform.localScale.x) > minSize.x && transform.localScale.y > minSize.y) {
+			float sx;
+			sx = transform.localScale.x - (0.01f * damage * Mathf.Sign(transform.localScale.x));
+
+			Vector3 scale = new Vector3 (
+				sx,
+				transform.localScale.y - (0.01f * damage),
+				transform.localScale.z
+			);
+			
+			transform.localScale = scale;
+		} else {
+			// Player die
+			GameController controller = GameController.GetInstance();
+			controller.playerDie();
 		}
 	}
 
@@ -215,18 +241,26 @@ public class Players : MonoBehaviour {
 	void playSFX(string name) {
 		if (name == "jump") {
 			audioSource.clip = jumpAudio;
-			audioSource.Play();
-		} 
-		else if (name == "sizeup") {
+			audioSource.Play ();
+		} else if (name == "sizeup") {
 			audioSource.clip = sizeupAudio;
-			audioSource.Play();
-		}
-		else if (name == "run") {
-			if ( ! audioSource.isPlaying) {
+			audioSource.Play ();
+		} else if (name == "run") {
+			if (! audioSource.isPlaying) {
 				audioSource.clip = runAudio;
-				audioSource.Play();
+				audioSource.Play ();
+			}
+		} else if (name == "hit") {
+			if (! audioSource.isPlaying) {
+				audioSource.clip = playerHit;
+				audioSource.Play ();
 			}
 		}
+	}
+
+	// Set player observer
+	public void setObs(IPlayerObserver obs) {
+		this.obs = obs;
 	}
 
 }

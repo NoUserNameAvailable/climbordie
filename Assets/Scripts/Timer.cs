@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour {
 	
 	public int timeLimit;
-	public bool stop;
+	public bool stop = true;
 
 	private Text textComponent;
 	private bool descending = false;
@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		textComponent = (Text)GetComponent<Text> ();
+		textComponent = GetComponent<Text> ();
 		descending = (timeLimit > 0);
 
 		counter = (descending) ? timeLimit : 0;
