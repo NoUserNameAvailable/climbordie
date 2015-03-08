@@ -1594,7 +1594,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11455558, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
       propertyPath: meterPerLevel
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
@@ -2782,7 +2782,7 @@ Transform:
   m_PrefabInternal: {fileID: 1436589056}
   m_GameObject: {fileID: 1111803627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.92999983, y: .970000029, z: 0}
+  m_LocalPosition: {x: 0, y: .699999988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3536,11 +3536,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 406288, guid: 8f61e165054346a4686de7411cf9ca02, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.92999983
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406288, guid: 8f61e165054346a4686de7411cf9ca02, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .970000029
+      value: .699999988
       objectReference: {fileID: 0}
     - target: {fileID: 406288, guid: 8f61e165054346a4686de7411cf9ca02, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6173,7 +6173,7 @@ MonoBehaviour:
   lavaPrefab: {fileID: 177242, guid: a0a5a7921d3f38643bdd8ff7e1dbb567, type: 2}
   gameUIPrefab: {fileID: 180668, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
   level: 1
-  meterPerLevel: 50
+  meterPerLevel: 20
 --- !u!4 &2126752099
 Transform:
   m_ObjectHideFlags: 0
@@ -6199,8 +6199,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 108180, guid: bbce1fdf5332b5046a598686ce3d2657, type: 2}
-  levels: 01000000
+  - {fileID: 106538, guid: de4105d553ea4e845bbb3a48358a0553, type: 2}
+  - {fileID: 199562, guid: 6b21c3baad284d94497c1daf70e14040, type: 2}
+  - {fileID: 188896, guid: e1b3689878d9019419842d6d63ed5f88, type: 2}
+  - {fileID: 138480, guid: 15e1f5bb0a6d2f14ea65e2cc33f9ab23, type: 2}
+  - {fileID: 108180, guid: bbce1fdf5332b5046a598686ce3d2657, type: 2}
+  - {fileID: 147076, guid: 4b9f181489f6524488b5481c6d8dd88f, type: 2}
+  - {fileID: 185834, guid: 36e023af416a1a64586d53b79f1c8ad3, type: 2}
+  - {fileID: 112456, guid: 446af8592d7fc6247bf03cb1de97cd0a, type: 2}
+  - {fileID: 129660, guid: da09735f8b6c9eb40bc1b10ef1694835, type: 2}
+  - {fileID: 192380, guid: 956cfaa0239670743bf3dc2e6d222fcc, type: 2}
+  - {fileID: 112634, guid: a562e0b67f3e7b044b031ff266a61882, type: 2}
+  - {fileID: 146096, guid: ac92314c3bfa887469dcb7bc28f80216, type: 2}
+  - {fileID: 174224, guid: 500f0c9569e0f474ba784a4db0152c89, type: 2}
+  - {fileID: 144556, guid: b91ca0dee8332f848ad6003e1eb1cfaa, type: 2}
+  levels: 010000000100000002000000020000000300000001000000010000000100000002000000020000000300000003000000010000000200000003000000
   currentLevel: 1
-  difficultyMax: 1
+  difficultyMax: 3
   prefabHeight: 9
   firstLevel: {fileID: 1327678482}
