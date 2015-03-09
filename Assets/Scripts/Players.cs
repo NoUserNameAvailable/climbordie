@@ -107,7 +107,8 @@ public class Players : MonoBehaviour {
 		}
 
 		// Update observer
-		obs.PlayerUpdate (this);
+		if (obs != null)
+			obs.PlayerUpdate (this);
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
