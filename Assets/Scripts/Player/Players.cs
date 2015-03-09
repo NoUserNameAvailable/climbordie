@@ -9,6 +9,7 @@ public class Players : MonoBehaviour {
 	public float speed;
 	public float jumpSpeed;
 	public int jumpLimit;
+
 	public int meltingSpeed;
 
 	public Vector2 minSize;
@@ -32,9 +33,6 @@ public class Players : MonoBehaviour {
 	private int jump = 0;
 	private int jumpState = 0;
 	private bool canJump = true;
-	
-	private bool canRunRight = true;
-	private bool canRunLeft = true;
 
 	// Rotate sprite when run left
 	private bool runRight = false;
@@ -54,11 +52,6 @@ public class Players : MonoBehaviour {
 	void Update () {
 		// Stop running
 		if (Input.GetKeyUp ("left") || Input.GetKeyUp ("right")) {
-			Vector2 movement = new Vector2 (0.0f, rigidbody2D.velocity.y);
-			rigidbody2D.velocity = movement;
-		}
-		
-		if (( ! canRunRight && Input.GetKey("right")) || ( ! canRunLeft && Input.GetKey("left"))) {
 			Vector2 movement = new Vector2 (0.0f, rigidbody2D.velocity.y);
 			rigidbody2D.velocity = movement;
 		}
@@ -96,10 +89,9 @@ public class Players : MonoBehaviour {
 		if (Input.GetKey ("right") && ! runRight)
 			runRotate();
 
-		if ((Input.GetKey ("left") && canRunLeft) || (Input.GetKey ("right") && canRunRight)) {
+		if ((Input.GetKey ("left")) || (Input.GetKey ("right"))) {
 			float vx = (runRight) ? 1.0f : -1.0f;
 
-			
 			movement = new Vector2(vx * speed, rigidbody2D.velocity.y);
 			rigidbody2D.velocity = movement;
 
@@ -111,22 +103,14 @@ public class Players : MonoBehaviour {
 			obs.PlayerUpdate (this);
 	}
 
-	void OnCollisionEnter2D(Collision2D other) {
-		if (other.gameObject.tag == "WallRight") {
-			canRunRight = false;
-		} else if (other.gameObject.tag == "WallLeft") {
-			canRunLeft = false;
-		} else if (other.gameObject.tag == "Platform") {
+	void OnCollisionStay2D(Collision2D other) {
+		if (other.gameObject.tag == "Platform" || other.gameObject.tag == "Pic") {
 			isGrounded = true;
 		}
 	}
 	
 	void OnCollisionExit2D(Collision2D other) {
-		if (other.gameObject.tag == "WallRight") {
-			canRunRight = true;
-		} else if (other.gameObject.tag == "WallLeft") {
-			canRunLeft = true;
-		} else if (other.gameObject.tag == "Platform") {
+		if (other.gameObject.tag == "Platform") {
 			isGrounded = false;
 		}
 	}
@@ -143,8 +127,6 @@ public class Players : MonoBehaviour {
 	// Reduce player size when he run
 	void playerMelting() {
 		if (Mathf.Abs(transform.localScale.x) > minSize.x && transform.localScale.y > minSize.y) {
-
-			// Reduce player size
 			float sizeFactor = Mathf.Floor(transform.localScale.y + 1);
 			float sx;
 

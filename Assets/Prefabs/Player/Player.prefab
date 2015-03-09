@@ -84,7 +84,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115948}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 168ce2516a703de4f9fe3cd84661ee99, type: 2}
   m_IsTrigger: 0
   m_Size: {x: .300000012, y: .600000024}
   m_Center: {x: -.0399999991, y: 0}
@@ -95,7 +95,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115948}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 168ce2516a703de4f9fe3cd84661ee99, type: 2}
   m_IsTrigger: 0
   m_Size: {x: .349999994, y: .300000012}
   m_Center: {x: -.0500000007, y: -.150000006}
