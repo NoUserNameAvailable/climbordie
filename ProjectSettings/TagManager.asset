@@ -14,6 +14,8 @@ TagManager:
   - frameball
   - Level
   - 
+  - WallRight
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast
@@ -78,4 +80,8 @@ TagManager:
   - name: UI
     userID: 7
     uniqueID: 3582843401
+    locked: 0
+  - name: Igloo
+    userID: 8
+    uniqueID: 211410959
     locked: 0
