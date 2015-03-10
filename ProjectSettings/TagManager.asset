@@ -9,8 +9,8 @@ TagManager:
   - Object
   - Malus
   - Bonus
-  - WallLeft
-  - WallRight
+  - Pic
+  - Wall
   - frameball
   - Level
   - 
