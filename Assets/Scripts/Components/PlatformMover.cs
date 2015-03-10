@@ -24,12 +24,8 @@ public class PlatformMover : MonoBehaviour {
 		Vector2 diff = (Vector2) rect.position - initPos;
 		Vector2 diffAbs = vectorAbs (diff);
 
-		if (diffAbs.x < moveToAbs.x && diffAbs.y < moveToAbs.y) {
-			rigidbody2D.velocity = velocity;
-		} else if (diffAbs.x < moveToAbs.x && diffAbs.y >= moveToAbs.y) {
-			rigidbody2D.velocity = new Vector2 (velocity.x, 0f);
-		} else if (diffAbs.x >= moveToAbs.x && diffAbs.y < moveToAbs.y) {
-			rigidbody2D.velocity = new Vector2 (0f, velocity.y);
+		if (diffAbs.x < moveToAbs.x || diffAbs.y < moveToAbs.y) {
+			rigidbody2D.MovePosition(transform.position + (Vector3) velocity * Time.deltaTime);
 		} else {
 			rigidbody2D.velocity = Vector2.zero;
 

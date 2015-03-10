@@ -15,14 +15,15 @@ public class Healthbar : MonoBehaviour, IPlayerObserver {
 
 	public void PlayerUpdate(Players player) {
 		float playerSizeAbs = Mathf.Abs (player.transform.localScale.x) - player.minSize.x;
+		float maxSize = player.maxSize.x - player.minSize.x;
 
-		float life = playerSizeAbs / (player.maxSize.x - player.minSize.x);
+		float life = playerSizeAbs / maxSize;
 		health.sizeDelta = new Vector2(life * 186, health.sizeDelta.y);
 
-		if (playerSizeAbs <= 0 && ! warningText.activeSelf)
+		if (playerSizeAbs <= (maxSize / 4) && ! warningText.activeSelf)
 			warningText.SetActive (true);
 
-		if (playerSizeAbs > 0 && warningText.activeSelf)
+		if (playerSizeAbs > (maxSize / 4) && warningText.activeSelf)
 			warningText.SetActive (false);
 	}
 

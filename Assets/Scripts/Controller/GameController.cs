@@ -3,170 +3,172 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 
-	// GameObject
+	// Player
 	public GameObject playerPrefab;
+	public float meltingDistance;
+
+	private Players player;
+	private Vector3 spawner;
+
+	// Lava
 	public GameObject lavaPrefab;
-
-	private GameObject lava;
-	private GameObject player;
-	private Players playerObj;
-
-	private CameraController cameraControl;
+	private Lava lava;
+	private DynamicMover lavaMover;
 
 	// GUI
-	public GameObject gameUIPrefab;
-	private GameUIManager uimanager;
+	public GameObject guiPrefab;
+	private GameUIManager uiManager;
 
-	// Game state
-	public int level = 0;
-	public int meterPerLevel;
+	// Camera
+	private CameraController cameraControl;
 
-	private int nextLevel;
-	private int meter = 0;
-
+	// Game states
 	private bool gameRunning = false;
 	private bool gameEnd = false;
 
-	// GameController instance
-	private static GameController controller;
+	private int nextLevel;
+	private int meter;
 
-	// Erase counter
-	private int eraseLevelFrame;
+	public int currentLevel;
+	public int meterPerLevel;
+	public float scrollSpeed;
 
-	// Use this for initialization
+	// Instance
+	private static GameController instance;
+
+	// Use for initialization
 	void Awake () {
-		// Instance game controller
-		if (controller != null)
+		// Set instance (only one instance can exist)
+		if (instance != null)
 			return;
 		else
-			controller = this;
+			instance = this;
 
-		// Create game GUI
-		GameObject ui = Instantiate(gameUIPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-		uimanager = ui.GetComponent<GameUIManager> ();
+		// Add GUI
+		GameObject ui = Instantiate (guiPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+		uiManager = ui.GetComponent<GameUIManager> ();
 
-		// Active start text
-		uimanager.toggleStartText (true);
-
-		// Create lava
+		// Add lava
 		RectTransform lavaRect = lavaPrefab.GetComponent<RectTransform> ();
-		lava = Instantiate (lavaPrefab, lavaRect.position, lavaRect.rotation) as GameObject;
-
-		// Find player spawn
-		GameObject spawn = GameObject.FindGameObjectWithTag ("PlayerSpawn");
-
-		// Spawn player
-		player = Instantiate (playerPrefab, spawn.transform.position, Quaternion.identity) as GameObject;
-		playerObj = player.GetComponent<Players> ();
-
-		player.SetActive (false);
-		spawn.SetActive (false);
+		GameObject lavaObj = Instantiate (lavaPrefab, lavaRect.position, lavaRect.rotation) as GameObject;
+		lava = lavaObj.GetComponent<Lava> ();
+		lavaMover = lavaObj.GetComponent<DynamicMover> ();
 
 		// Find camera
 		cameraControl = Camera.main.GetComponent<CameraController> ();
-		cameraControl.setPlayer (player);
 
+		// Set spawn coord
+		GameObject spawn = GameObject.Find ("PlayerSpawn");
+		spawner = spawn.transform.position;
+		spawn.SetActive (false);
+
+		// Initializa game state
 		nextLevel = meterPerLevel;
+
+		// Active start text
+		uiManager.toggleStartText (true);
 	}
 
+	// Update is called once per frame
 	void Update() {
+		// Start game
 		if (! gameRunning && Input.GetKey (KeyCode.Return))
-			StartCoroutine(this.StartGame());
+			StartCoroutine (start());
 
+		// Restart game
 		if (gameEnd && Input.GetKeyDown (KeyCode.R))
 			Application.LoadLevel (Application.loadedLevel);
 
 		if (gameRunning && player != null) {
-			// Update meter count
-			if (player.transform.position.y > meter) {
-				meter = (int)player.transform.position.y;
-				uimanager.updateMeter (meter);
+			// Update meter
+			if (player.gameObject.transform.position.y > meter) {
+				meter = (int) player.gameObject.transform.position.y;
+				uiManager.updateMeter(meter);
 			}
 
 			// Update current level
-			if (player.transform.position.y >= nextLevel) {
-				level += 1;
+			if (meter >= nextLevel) {
+				currentLevel++;
 				nextLevel += meterPerLevel;
 
-				GetComponent<LevelManager>().currentLevel = level;
-				uimanager.updateLevel(level);
+				GetComponent<LevelManager>().currentLevel = currentLevel;
+				uiManager.updateLevel(currentLevel);
+
+				// Increase scrolling speed
+
 			}
 
-			// Update lava position (for more chalenge)
-			if (lava.transform.position.y + 27 < player.transform.position.y) {
-				lava.transform.position = new Vector3(lava.transform.position.x, player.transform.position.y - 27, lava.transform.position.z);
-			}
-
-			// Erase level (only 1 frame of 10)
-			if (eraseLevelFrame % 10 == 0) {
-				GameObject[] levelsInMap = GameObject.FindGameObjectsWithTag("Level");
-
-				foreach (GameObject obj in levelsInMap) {
-					if (obj.transform.position.y < lava.transform.position.y)
-						Destroy(obj);
-				}
-
-				eraseLevelFrame = 0;
-			}
-
-			eraseLevelFrame++;
+			// Melting player
+			if (player.gameObject.transform.position.y - lava.transform.position.y < meltingDistance)
+				player.melting();
 		}
+
 	}
 
-	IEnumerator StartGame() {
-		playerObj.setObs(uimanager.getHealthObs());
-		uimanager.toggleStartText (false);
-		uimanager.togglePlayUI (true);
+	IEnumerator start() {
+		// Toggle ui
+		uiManager.toggleStartText (false);
+		uiManager.togglePlayUI (true);
 
-		// Active camera
-		cameraControl.speed = 0.3f;
+		// Spawn player
+		GameObject playerObj = Instantiate (playerPrefab, spawner, Quaternion.identity) as GameObject;
 
-		// Active player
-		player.SetActive (true);
+		player = playerObj.GetComponent<Players> ();
+		player.setObs (uiManager.getHealthObs ());
 
-		// Active and start timer
-		uimanager.startGame();
+		// Start timer
+		uiManager.startTimer ();
 
-		// Active lava
-		yield return new WaitForSeconds(2f);
-		DynamicMover lavaMover = lava.GetComponent<DynamicMover> ();
-		lavaMover.verticalSpeed = 0.3f;
-
-		// Game running
+		// Set game running status
 		gameRunning = true;
+
+		// Wait few second before start scrolling
+		yield return new WaitForSeconds (3f);
+		setScrollingSpeed (scrollSpeed);
 	}
 
-	public IEnumerator EndGame() {
-		// Disable camera scrolling
-		cameraControl.setPlayer (null);
-		cameraControl.speed = 0.0f;
+	void end() {
+		// Disable scrolling
+		setScrollingSpeed (0.0f);
 
-		// Disable player
-		Destroy (player);
+		// Destroy player
+		Destroy (player.gameObject);
 
-		// End game ui
-		uimanager.endGame ();
+		// Stop timer and show gameover
+		uiManager.stopTimer ();
+		uiManager.toggleEndText (true);
 
-		// Freeze lava
-		yield return new WaitForSeconds(1.5f);
-
-		DynamicMover lavaMover = lava.GetComponent<DynamicMover> ();
-		lavaMover.verticalSpeed = 0.0f;
-
-		// Show gameover
-		uimanager.toggleEndText (true);
-
-		// Set game end
+		// Set game ending status
 		gameEnd = true;
 	}
 
 	public void playerDie() {
-		StartCoroutine(controller.EndGame());
+		end ();
 	}
 
-	// Get controller instance
-	public static GameController GetInstance() {
-		return controller;
+	public void setScrollingSpeed(float speed) {
+		lavaMover.verticalSpeed = speed;
+		cameraControl.speed = speed;
+	}
+
+	public static GameController getInstance() {
+		return instance;
+	}
+
+	public bool isGameRunning() {
+		return gameRunning;
+	}
+
+	public bool isGameEnd() {
+		return gameEnd;
+	}
+
+	public Players getPlayer() {
+		return player;
+	}
+
+	public int getMeter() {
+		return meter;
 	}
 
 }

@@ -49,9 +49,13 @@ public class LevelManager : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		while (Camera.main.transform.position.y + (2 * prefabHeight) > lastLevel.transform.position.y) {
-			System.Random rnd = new System.Random();
-			addNextLevel(currentLevel, rnd.NextDouble());
+		Players player = GameController.getInstance ().getPlayer ();
+
+		if (player != null) {
+			while (player.gameObject.transform.position.y + (2 * prefabHeight) > lastLevel.transform.position.y) {
+				System.Random rnd = new System.Random ();
+				addNextLevel (currentLevel, rnd.NextDouble ());
+			}
 		}
 	}
 	

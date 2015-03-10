@@ -188,7 +188,7 @@ MonoBehaviour:
   jumpLimit: 1
   meltingSpeed: 1
   minSize: {x: .5, y: .5}
-  maxSize: {x: 3, y: 3}
+  maxSize: {x: 1.5, y: 1.5}
   jumpAudio: {fileID: 8300000, guid: 9888493f0d0a264419a2d6d198866b83, type: 3}
   runAudio: {fileID: 8300000, guid: 25cea240375693f4492bb5abedcae1b5, type: 3}
   sizeupAudio: {fileID: 8300000, guid: bc131c9a83356644f96024b279c337f6, type: 3}

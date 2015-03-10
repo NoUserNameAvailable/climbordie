@@ -56,12 +56,15 @@ public class GameUIManager : MonoBehaviour {
 		endText.SetActive (enabled);
 	}
 
-	public void startGame() {
+	public void startTimer() {
 		timer.stop = false;
 	}
 
-	public void endGame() {
+	public void stopTimer() {
 		timer.stop = true;
+	}
+
+	public void playerDie() {
 		health.PlayerDie ();
 	}
 

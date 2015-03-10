@@ -41,21 +41,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 108180, guid: bbce1fdf5332b5046a598686ce3d2657, type: 2}
-  - {fileID: 106538, guid: de4105d553ea4e845bbb3a48358a0553, type: 2}
+  - {fileID: 111296, guid: bbce1fdf5332b5046a598686ce3d2657, type: 2}
+  - {fileID: 156872, guid: 85b096f9482f8c04485c236add645af0, type: 2}
   - {fileID: 199562, guid: 6b21c3baad284d94497c1daf70e14040, type: 2}
   - {fileID: 188896, guid: e1b3689878d9019419842d6d63ed5f88, type: 2}
   - {fileID: 138480, guid: 15e1f5bb0a6d2f14ea65e2cc33f9ab23, type: 2}
-  - {fileID: 108180, guid: bbce1fdf5332b5046a598686ce3d2657, type: 2}
+  - {fileID: 138480, guid: 15e1f5bb0a6d2f14ea65e2cc33f9ab23, type: 2}
   - {fileID: 147076, guid: 4b9f181489f6524488b5481c6d8dd88f, type: 2}
   - {fileID: 185834, guid: 36e023af416a1a64586d53b79f1c8ad3, type: 2}
   - {fileID: 112456, guid: 446af8592d7fc6247bf03cb1de97cd0a, type: 2}
   - {fileID: 129660, guid: da09735f8b6c9eb40bc1b10ef1694835, type: 2}
   - {fileID: 192380, guid: 956cfaa0239670743bf3dc2e6d222fcc, type: 2}
   - {fileID: 112634, guid: a562e0b67f3e7b044b031ff266a61882, type: 2}
-  - {fileID: 146096, guid: ac92314c3bfa887469dcb7bc28f80216, type: 2}
-  - {fileID: 174224, guid: 500f0c9569e0f474ba784a4db0152c89, type: 2}
-  - {fileID: 144556, guid: b91ca0dee8332f848ad6003e1eb1cfaa, type: 2}
+  - {fileID: 115924, guid: ac92314c3bfa887469dcb7bc28f80216, type: 2}
+  - {fileID: 145796, guid: 500f0c9569e0f474ba784a4db0152c89, type: 2}
+  - {fileID: 171966, guid: b91ca0dee8332f848ad6003e1eb1cfaa, type: 2}
   levels: 010000000100000002000000020000000300000001000000010000000100000002000000020000000300000003000000010000000200000003000000
   currentLevel: 1
   difficultyMax: 3
@@ -73,10 +73,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 115948, guid: a7b1ee609dfa33648ab0aa043ac9f810, type: 2}
+  meltingDistance: 7
   lavaPrefab: {fileID: 177242, guid: a0a5a7921d3f38643bdd8ff7e1dbb567, type: 2}
-  gameUIPrefab: {fileID: 180668, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
-  level: 1
+  guiPrefab: {fileID: 180668, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
+  currentLevel: 1
   meterPerLevel: 20
+  scrollSpeed: .5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c715d1ba4c9f43f4592c56e3e7221dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 1, y: 3}
+  moveTo: {x: 3, y: 0}
   speed: 1
 --- !u!114 &11456580
 MonoBehaviour:
@@ -230,7 +230,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 1.25999999, y: -.409999996}
+  m_AnchoredPosition: {x: -1.87, y: 2.32999992}
   m_SizeDelta: {x: 1.27999997, y: .319999993}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22456580

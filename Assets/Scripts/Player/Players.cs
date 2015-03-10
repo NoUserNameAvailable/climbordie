@@ -58,6 +58,10 @@ public class Players : MonoBehaviour {
 
 		// Animation
 		animeSprite ();
+
+		// Update health
+		if (obs != null)
+			obs.PlayerUpdate (this);
 	}
 
 	void FixedUpdate() {
@@ -94,23 +98,21 @@ public class Players : MonoBehaviour {
 
 			movement = new Vector2(vx * speed, rigidbody2D.velocity.y);
 			rigidbody2D.velocity = movement;
-
-			playerMelting ();
 		}
-
-		// Update observer
-		if (obs != null)
-			obs.PlayerUpdate (this);
 	}
 
 	void OnCollisionStay2D(Collision2D other) {
 		if (other.gameObject.tag == "Platform" || other.gameObject.tag == "Pic") {
+			//transform.parent = other.gameObject.transform;
 			isGrounded = true;
+		}
+		else {
+		//	transform.parent = null;
 		}
 	}
 	
 	void OnCollisionExit2D(Collision2D other) {
-		if (other.gameObject.tag == "Platform") {
+		if (other.gameObject.tag == "Platform" || other.gameObject.tag == "Pic") {
 			isGrounded = false;
 		}
 	}
@@ -124,13 +126,14 @@ public class Players : MonoBehaviour {
 		transform.localScale = scale;
 	}
 
-	// Reduce player size when he run
-	void playerMelting() {
-		if (Mathf.Abs(transform.localScale.x) > minSize.x && transform.localScale.y > minSize.y) {
-			float sizeFactor = Mathf.Floor(transform.localScale.y + 1);
+	// Reduce player size
+	public void melting() {
+
+		if (Mathf.Abs (transform.localScale.x) > minSize.x && transform.localScale.y > minSize.y) {
+			float sizeFactor = Mathf.Floor (transform.localScale.y + 1);
 			float sx;
 
-			sx = transform.localScale.x - (0.0003f * meltingSpeed * sizeFactor * Mathf.Sign(transform.localScale.x));
+			sx = transform.localScale.x - (0.0003f * meltingSpeed * sizeFactor * Mathf.Sign (transform.localScale.x));
 
 			Vector3 scale = new Vector3 (
 				sx,
@@ -139,29 +142,11 @@ public class Players : MonoBehaviour {
 			);
 
 			transform.localScale = scale;
-		}
-	}
-
-	public void takeDamage(float damage) {
-		if (audioSource.enabled)
-			playSFX ("hit");
-
-		if (Mathf.Abs (transform.localScale.x) > minSize.x && transform.localScale.y > minSize.y) {
-			float sx;
-			sx = transform.localScale.x - (0.01f * damage * Mathf.Sign(transform.localScale.x));
-
-			Vector3 scale = new Vector3 (
-				sx,
-				transform.localScale.y - (0.01f * damage),
-				transform.localScale.z
-			);
-			
-			transform.localScale = scale;
 		} else {
-			// Player die
-			GameController controller = GameController.GetInstance();
-			controller.playerDie();
+			// If player is so small, make him die
+			GameController.getInstance().playerDie();
 		}
+
 	}
 
 	// Increase player size
@@ -176,6 +161,7 @@ public class Players : MonoBehaviour {
 
 		Vector3 scale = new Vector3(sx, sy, transform.localScale.z);
 		transform.localScale = scale;
+
 		playSFX("sizeup");
 	}
 
