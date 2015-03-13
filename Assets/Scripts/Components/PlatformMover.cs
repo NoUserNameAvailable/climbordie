@@ -10,14 +10,30 @@ public class PlatformMover : MonoBehaviour {
 	private Vector2 moveToAbs;
 	private Vector2 velocity;
 	
+	private Transform playerTransform;
+	private Vector3 lastPlatformPosition;
+	
 	private RectTransform rect;
 
 	void Start() {
 		rect = GetComponent<RectTransform> ();
+		
 		initPos = (Vector2) rect.position;
+		lastPlatformPosition = rect.position;
 
 		moveToAbs = vectorAbs (moveTo);
 		velocity = calcVelocity ();
+	}
+	
+	void Update() {
+		if (playerTransform != null) {
+			Vector3 moveTo = rect.position - lastPlatformPosition;
+
+			if (moveTo != Vector3.zero)
+				playerTransform.position += moveTo;
+		}
+		
+		lastPlatformPosition = rect.position;
 	}
 
 	void FixedUpdate() {
@@ -34,6 +50,18 @@ public class PlatformMover : MonoBehaviour {
 
 			moveToAbs = vectorAbs(moveTo);
 			velocity = calcVelocity();
+		}
+	}
+	
+	void OnCollisionEnter2D(Collision2D other) {
+		if (other.gameObject.tag == "Player") {
+			playerTransform = other.gameObject.transform;
+		}
+	}
+	
+	void OnCollisionExit2D(Collision2D other) {
+		if (other.gameObject.tag == "Player") {
+			playerTransform = null;
 		}
 	}
 
