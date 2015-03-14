@@ -22,6 +22,7 @@ public class Players : MonoBehaviour {
 	public AudioClip runAudio;
 	public AudioClip sizeupAudio;
 	public AudioClip playerHit;
+	public AudioClip playerImpact;
 
 	// For one-way collision
 	public bool oneWayCollision;
@@ -149,6 +150,27 @@ public class Players : MonoBehaviour {
 
 	}
 
+	// Take damage
+	public void takeDamage(float damage) {
+		if (Mathf.Abs (transform.localScale.x) > minSize.x && transform.localScale.y > minSize.y) {
+			float sx;
+			
+			sx = transform.localScale.x - (0.01f * damage * Mathf.Sign (transform.localScale.x));
+			
+			Vector3 scale = new Vector3 (
+				sx,
+				transform.localScale.y - (0.01f * damage),
+				transform.localScale.z
+			);
+			
+			transform.localScale = scale;
+			playSFX("impact");
+		} else {
+			// If player is so small, make him die
+			GameController.getInstance().playerDie();
+		}
+	}
+
 	// Increase player size
 	public void increaseSize(float amount) {
 		float sx = (transform.localScale.x > 0) ? transform.localScale.x + (amount) : transform.localScale.x - (amount);
@@ -224,6 +246,9 @@ public class Players : MonoBehaviour {
 				audioSource.clip = playerHit;
 				audioSource.Play ();
 			}
+		} else if (name == "impact") {
+			audioSource.clip = playerImpact;
+			audioSource.Play ();
 		}
 	}
 

@@ -99,8 +99,13 @@ public class GameController : MonoBehaviour {
 			}
 
 			// Melting player
-			if (player.gameObject.transform.position.y - lava.transform.position.y < meltingDistance)
+			if (player.gameObject.transform.position.y - lava.transform.position.y < meltingDistance) {
 				player.melting();
+				uiManager.playerMelting(true);
+			}
+			else {
+				uiManager.playerMelting(false);
+			}
 		}
 
 	}
@@ -137,6 +142,7 @@ public class GameController : MonoBehaviour {
 		// Stop timer and show gameover
 		uiManager.stopTimer ();
 		uiManager.toggleEndText (true);
+		uiManager.playerDie ();
 
 		// Set game ending status
 		gameEnd = true;

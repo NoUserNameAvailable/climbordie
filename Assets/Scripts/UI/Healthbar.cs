@@ -7,6 +7,8 @@ public class Healthbar : MonoBehaviour, IPlayerObserver {
 	private RectTransform health;
 
 	private GameObject warningText;
+
+	private bool playerMelting;
 	
 	void Start () {
 		health = GameObject.Find ("Health").GetComponent<RectTransform> ();
@@ -19,18 +21,17 @@ public class Healthbar : MonoBehaviour, IPlayerObserver {
 
 		float life = playerSizeAbs / maxSize;
 		health.sizeDelta = new Vector2(life * 186, health.sizeDelta.y);
-
-		if (playerSizeAbs <= (maxSize / 4) && ! warningText.activeSelf)
-			warningText.SetActive (true);
-
-		if (playerSizeAbs > (maxSize / 4) && warningText.activeSelf)
-			warningText.SetActive (false);
 	}
 
 	public void PlayerDie() {
 		health.sizeDelta = new Vector2(0f, health.sizeDelta.y);
 		warningText.SetActive (true);
 		warningText.GetComponent<Text> ().text = "Die";
+	}
+
+	public void toggleMelting(bool value) {
+		if (warningText != null && value != warningText.activeSelf)
+			warningText.SetActive (value);
 	}
 
 }

@@ -6155,7 +6155,7 @@ Prefab:
       objectReference: {fileID: 1327678482}
     - target: {fileID: 11455558, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
       propertyPath: scrollSpeed
-      value: .400000006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455558, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
       propertyPath: gameUIPrefab
@@ -14073,7 +14073,7 @@ MonoBehaviour:
   guiPrefab: {fileID: 180668, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
   currentLevel: 1
   meterPerLevel: 10
-  scrollSpeed: .400000006
+  scrollSpeed: 0
 --- !u!4 &2126752099
 Transform:
   m_ObjectHideFlags: 0
