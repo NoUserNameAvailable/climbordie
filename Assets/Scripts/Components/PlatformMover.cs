@@ -30,7 +30,7 @@ public class PlatformMover : MonoBehaviour {
 			Vector3 moveTo = rect.position - lastPlatformPosition;
 
 			if (moveTo != Vector3.zero)
-				playerTransform.position += moveTo;
+				playerTransform.position += new Vector3(moveTo.x, 0f, 0f);
 		}
 		
 		lastPlatformPosition = rect.position;

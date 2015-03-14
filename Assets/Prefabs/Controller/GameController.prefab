@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 455558}
   - 114: {fileID: 11455558}
   - 114: {fileID: 11413056}
+  - 114: {fileID: 11473032}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -46,19 +47,20 @@ MonoBehaviour:
   - {fileID: 199562, guid: 6b21c3baad284d94497c1daf70e14040, type: 2}
   - {fileID: 188896, guid: e1b3689878d9019419842d6d63ed5f88, type: 2}
   - {fileID: 138480, guid: 15e1f5bb0a6d2f14ea65e2cc33f9ab23, type: 2}
-  - {fileID: 138480, guid: 15e1f5bb0a6d2f14ea65e2cc33f9ab23, type: 2}
-  - {fileID: 147076, guid: 4b9f181489f6524488b5481c6d8dd88f, type: 2}
-  - {fileID: 185834, guid: 36e023af416a1a64586d53b79f1c8ad3, type: 2}
-  - {fileID: 112456, guid: 446af8592d7fc6247bf03cb1de97cd0a, type: 2}
-  - {fileID: 129660, guid: da09735f8b6c9eb40bc1b10ef1694835, type: 2}
-  - {fileID: 192380, guid: 956cfaa0239670743bf3dc2e6d222fcc, type: 2}
-  - {fileID: 112634, guid: a562e0b67f3e7b044b031ff266a61882, type: 2}
+  - {fileID: 182958, guid: 9b072b3b7132cbe458be85b25f4adc53, type: 2}
+  - {fileID: 179824, guid: 4b9f181489f6524488b5481c6d8dd88f, type: 2}
+  - {fileID: 104528, guid: 36e023af416a1a64586d53b79f1c8ad3, type: 2}
+  - {fileID: 155700, guid: 446af8592d7fc6247bf03cb1de97cd0a, type: 2}
+  - {fileID: 105822, guid: da09735f8b6c9eb40bc1b10ef1694835, type: 2}
+  - {fileID: 195898, guid: 956cfaa0239670743bf3dc2e6d222fcc, type: 2}
+  - {fileID: 101406, guid: a562e0b67f3e7b044b031ff266a61882, type: 2}
   - {fileID: 115924, guid: ac92314c3bfa887469dcb7bc28f80216, type: 2}
   - {fileID: 145796, guid: 500f0c9569e0f474ba784a4db0152c89, type: 2}
-  - {fileID: 171966, guid: b91ca0dee8332f848ad6003e1eb1cfaa, type: 2}
-  levels: 010000000100000002000000020000000300000001000000010000000100000002000000020000000300000003000000010000000200000003000000
+  - {fileID: 124892, guid: d76ae40d2b2f16c42a7ff33bc96ea059, type: 2}
+  - {fileID: 180096, guid: 8e3b5c2afad1f60479f98103106c8320, type: 2}
+  levels: 01000000010000000200000002000000030000000300000001000000010000000200000002000000030000000300000001000000020000000500000006000000
   currentLevel: 1
-  difficultyMax: 3
+  difficultyMax: 6
   prefabHeight: 9
   firstLevel: {fileID: 0}
 --- !u!114 &11455558
@@ -79,6 +81,19 @@ MonoBehaviour:
   currentLevel: 1
   meterPerLevel: 20
   scrollSpeed: .5
+--- !u!114 &11473032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8f1ae389fc7d64b97b6a3cabbce7df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intervalCheck: 9
+  snowPrefab: {fileID: 181186, guid: b9225bb50d73e034ba2200da6dff3b83, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

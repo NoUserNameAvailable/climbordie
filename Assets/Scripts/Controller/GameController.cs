@@ -121,6 +121,12 @@ public class GameController : MonoBehaviour {
 		player = playerObj.GetComponent<Players> ();
 		player.setObs (uiManager.getHealthObs ());
 
+		// Initialize snowball player
+		SnowballSpawner snowspawn = GetComponent<SnowballSpawner> ();
+		if (snowspawn != null) {
+			snowspawn.setPlayer(player);
+		}
+
 		// Start timer
 		uiManager.startTimer ();
 

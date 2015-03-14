@@ -257,4 +257,12 @@ public class Players : MonoBehaviour {
 		this.obs = obs;
 	}
 
+	// Get player health
+	public float getHealth() {
+		float playerSizeAbs = Mathf.Abs (transform.localScale.x) - minSize.x;
+		float size = maxSize.x - minSize.x;
+		
+		return playerSizeAbs / size;
+	}
+
 }
