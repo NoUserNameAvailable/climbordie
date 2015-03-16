@@ -99,8 +99,13 @@ public class GameController : MonoBehaviour {
 			}
 
 			// Melting player
-			if (player.gameObject.transform.position.y - lava.transform.position.y < meltingDistance)
+			if (player.gameObject.transform.position.y - lava.transform.position.y < meltingDistance) {
 				player.melting();
+				uiManager.playerMelting(true);
+			}
+			else {
+				uiManager.playerMelting(false);
+			}
 		}
 
 	}
@@ -115,6 +120,12 @@ public class GameController : MonoBehaviour {
 
 		player = playerObj.GetComponent<Players> ();
 		player.setObs (uiManager.getHealthObs ());
+
+		// Initialize snowball player
+		SnowballSpawner snowspawn = GetComponent<SnowballSpawner> ();
+		if (snowspawn != null) {
+			snowspawn.setPlayer(player);
+		}
 
 		// Start timer
 		uiManager.startTimer ();
@@ -137,6 +148,7 @@ public class GameController : MonoBehaviour {
 		// Stop timer and show gameover
 		uiManager.stopTimer ();
 		uiManager.toggleEndText (true);
+		uiManager.playerDie ();
 
 		// Set game ending status
 		gameEnd = true;
