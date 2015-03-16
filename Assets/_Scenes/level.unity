@@ -8510,6 +8510,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: levels.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: prefabs.Array.size
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 455558, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8546,6 +8554,38 @@ Prefab:
       propertyPath: firstLevel
       value: 
       objectReference: {fileID: 1327678482}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: prefabs.Array.data[16]
+      value: 
+      objectReference: {fileID: 124892, guid: d76ae40d2b2f16c42a7ff33bc96ea059, type: 2}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: prefabs.Array.data[17]
+      value: 
+      objectReference: {fileID: 180096, guid: 8e3b5c2afad1f60479f98103106c8320, type: 2}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: prefabs.Array.data[14]
+      value: 
+      objectReference: {fileID: 171966, guid: b91ca0dee8332f848ad6003e1eb1cfaa, type: 2}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: prefabs.Array.data[15]
+      value: 
+      objectReference: {fileID: 108080, guid: a52932f96141e53419671f744d68c783, type: 2}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: levels.Array.data[16]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: levels.Array.data[17]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: levels.Array.data[15]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413056, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: levels.Array.data[14]
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
   m_RootGameObject: {fileID: 2126752097}
@@ -14209,9 +14249,11 @@ MonoBehaviour:
   - {fileID: 101406, guid: a562e0b67f3e7b044b031ff266a61882, type: 2}
   - {fileID: 115924, guid: ac92314c3bfa887469dcb7bc28f80216, type: 2}
   - {fileID: 145796, guid: 500f0c9569e0f474ba784a4db0152c89, type: 2}
+  - {fileID: 171966, guid: b91ca0dee8332f848ad6003e1eb1cfaa, type: 2}
+  - {fileID: 108080, guid: a52932f96141e53419671f744d68c783, type: 2}
   - {fileID: 124892, guid: d76ae40d2b2f16c42a7ff33bc96ea059, type: 2}
   - {fileID: 180096, guid: 8e3b5c2afad1f60479f98103106c8320, type: 2}
-  levels: 01000000010000000200000002000000030000000300000001000000010000000200000002000000030000000300000001000000020000000500000006000000
+  levels: 010000000100000002000000020000000300000003000000010000000100000002000000020000000300000003000000010000000200000003000000040000000500000006000000
   currentLevel: 1
   difficultyMax: 6
   prefabHeight: 9
