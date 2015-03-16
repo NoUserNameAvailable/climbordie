@@ -68,6 +68,10 @@ public class GameUIManager : MonoBehaviour {
 		health.PlayerDie ();
 	}
 
+	public void playerMelting(bool value) {
+		health.toggleMelting (value);
+	}
+
 	public IPlayerObserver getHealthObs() {
 		return (IPlayerObserver)health;
 	}

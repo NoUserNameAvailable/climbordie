@@ -4,12 +4,30 @@ using System.Collections;
 public class Spike : MonoBehaviour {
 
 	public float damage;
-	
-	void OnTriggerEnter2D(Collider2D other) {
+
+	private bool SpikeActive = true;
+
+	void OnTriggerStay2D(Collider2D other) {
 		if (other.gameObject.tag == "Player") {
-			Debug.Log(other.gameObject.rigidbody2D.velocity.y * -1.0f);
-			other.gameObject.rigidbody2D.velocity = new Vector2 (-1f * (other.gameObject.rigidbody2D.velocity.x + 1.0f), Mathf.Sign(other.gameObject.rigidbody2D.velocity.y) * -3f);
+			if (SpikeActive)
+				StartCoroutine( effect(other.gameObject.GetComponent<Players>()) );
 		}
+	}
+
+	IEnumerator effect(Players player) {
+		float playerSpeed = player.speed;
+		SpikeActive = false;
+
+		Blink blink = player.gameObject.AddComponent<Blink> ();
+		blink.StartEffect (2f);
+
+		player.speed = playerSpeed / 2;
+		player.takeDamage (damage);
+
+		yield return new WaitForSeconds (2f);
+		
+		player.speed = playerSpeed;
+		SpikeActive = true;
 	}
 
 }
