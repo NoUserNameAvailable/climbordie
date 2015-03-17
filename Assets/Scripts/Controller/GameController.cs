@@ -28,11 +28,16 @@ public class GameController : MonoBehaviour {
 
 	private int nextLevel;
 	private int meter;
+	private int lastMeter = 0;
 
 	public int currentLevel;
 	public int meterPerLevel;
-	public float scrollSpeed;
-
+	
+	public float maxScrollSpeed;
+	public float minScrollSpeed;
+	
+	private float incSpeedPerLevel;	
+	
 	// Instance
 	private static GameController instance;
 
@@ -67,6 +72,9 @@ public class GameController : MonoBehaviour {
 
 		// Active start text
 		uiManager.toggleStartText (true);
+		
+		// Calc scroll speed
+		incSpeedPerLevel = (maxScrollSpeed - minScrollSpeed) / (meterPerLevel / 9);
 	}
 
 	// Update is called once per frame
@@ -93,9 +101,19 @@ public class GameController : MonoBehaviour {
 
 				GetComponent<LevelManager>().currentLevel = currentLevel;
 				uiManager.updateLevel(currentLevel);
-
+				setScrollingSpeed(minScrollSpeed);
+			}
+			
+			if (meter > meterPerLevel && lastMeter != meter && meter  % 9 == 0) {
 				// Increase scrolling speed
-
+				if (getScrollingSpeed() + incSpeedPerLevel < maxScrollSpeed) {
+					setScrollingSpeed(getScrollingSpeed() + incSpeedPerLevel);
+				}
+				else {
+					setScrollingSpeed(maxScrollSpeed);
+				}
+				
+				lastMeter = meter;
 			}
 
 			// Melting player
@@ -135,7 +153,7 @@ public class GameController : MonoBehaviour {
 
 		// Wait few second before start scrolling
 		yield return new WaitForSeconds (3f);
-		setScrollingSpeed (scrollSpeed);
+		setScrollingSpeed (minScrollSpeed);
 	}
 
 	void end() {
@@ -161,6 +179,10 @@ public class GameController : MonoBehaviour {
 	public void setScrollingSpeed(float speed) {
 		lavaMover.verticalSpeed = speed;
 		cameraControl.speed = speed;
+	}
+	
+	public float getScrollingSpeed() {
+		return cameraControl.speed;
 	}
 
 	public static GameController getInstance() {
