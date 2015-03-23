@@ -4,6 +4,8 @@ using System.Collections;
 public class Spike : MonoBehaviour {
 
 	public float damage;
+	
+	private float playerSpeed = 2.0f;
 
 	private bool SpikeActive = true;
 
@@ -15,7 +17,6 @@ public class Spike : MonoBehaviour {
 	}
 
 	IEnumerator effect(Players player) {
-		float playerSpeed = player.speed;
 		SpikeActive = false;
 
 		Blink blink = player.gameObject.AddComponent<Blink> ();

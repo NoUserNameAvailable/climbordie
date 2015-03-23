@@ -73,6 +73,10 @@ TagManager:
     userID: 4
     uniqueID: 1778746059
     locked: 0
+  - name: Igloo
+    userID: 8
+    uniqueID: 211410959
+    locked: 0
   - name: Wall
     userID: 5
     uniqueID: 163127601
@@ -80,8 +84,4 @@ TagManager:
   - name: UI
     userID: 7
     uniqueID: 3582843401
-    locked: 0
-  - name: Igloo
-    userID: 8
-    uniqueID: 211410959
     locked: 0

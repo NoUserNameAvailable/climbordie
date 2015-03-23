@@ -10,13 +10,11 @@ public class BonusTeleport : MonoBehaviour {
 	private bool collide ;
 	private float timeOld ;
 	private float timeNow ;
-	private int i ;
 	private Vector3 playerP ;
 	
 
 	void Start(){
 		collide = false ;
-		i = 0;
 	}
 	
 	void OnTriggerEnter2D (Collider2D col){
