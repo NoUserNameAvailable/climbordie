@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 4fb38d8104f90e0409da78cfc5715ba6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ArnaudSprite1_0
+    21300002: ArnaudSprite1_1
+    21300004: ArnaudSprite1_2
+    21300006: ArnaudSprite1_3
+    21300008: ArnaudSprite1_4
+    21300010: ArnaudSprite1_5
+    21300012: ArnaudSprite1_6
+    21300014: ArnaudSprite1_7
+    21300016: ArnaudSprite1_8
+    21300018: ArnaudSprite1_9
+    21300020: ArnaudSprite1_10
+    21300022: ArnaudSprite1_11
+    21300024: ArnaudSprite1_12
+    21300026: ArnaudSprite1_13
+    21300028: ArnaudSprite1_14
+    21300030: ArnaudSprite1_15
+    21300032: ArnaudSprite1_16
+    21300034: ArnaudSprite1_17
+    21300036: ArnaudSprite1_18
+    21300038: ArnaudSprite1_19
+    21300040: ArnaudSprite1_20
+    21300042: ArnaudSprite1_21
+    21300044: ArnaudSprite1_22
+    21300046: ArnaudSprite1_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ArnaudSprite1_0
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1563
+        width: 109
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_1
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1573
+        width: 197
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_2
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1573
+        width: 303
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_3
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1570
+        width: 391
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1390
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1390
+        width: 191
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_6
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1393
+        width: 289
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_7
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1393
+        width: 394
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_8
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1207
+        width: 102
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_9
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1207
+        width: 197
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_10
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1278
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_11
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1207
+        width: 285
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_12
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1210
+        width: 384
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_13
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1013
+        width: 109
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_14
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1013
+        width: 197
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_15
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1013
+        width: 299
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_16
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1010
+        width: 387
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_17
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 823
+        width: 108
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_18
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 823
+        width: 204
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_19
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 827
+        width: 285
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_20
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 827
+        width: 391
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_21
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 633
+        width: 78
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_22
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 633
+        width: 101
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArnaudSprite1_25
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 637
+        width: 106
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
