@@ -84,7 +84,11 @@ public class LevelManager : MonoBehaviour {
 		
 		if (levelPrefabs.ContainsKey(level)) {
 			int prefabIndex = rnd.Next(0, levelPrefabs[level].Count);
-			prefab = levelPrefabs[level][prefabIndex];
+			
+			if (levelPrefabs[level][prefabIndex].name != lastLevel.name)
+				prefab = levelPrefabs[level][prefabIndex];
+			else
+				prefab = getRandomPrefab(level);
 		} else {
 			prefab = getRandomPrefab(level - 1);
 		}

@@ -48,21 +48,31 @@ MonoBehaviour:
   - {fileID: 188896, guid: e1b3689878d9019419842d6d63ed5f88, type: 2}
   - {fileID: 163758, guid: 15e1f5bb0a6d2f14ea65e2cc33f9ab23, type: 2}
   - {fileID: 126800, guid: 9b072b3b7132cbe458be85b25f4adc53, type: 2}
-  - {fileID: 179824, guid: 4b9f181489f6524488b5481c6d8dd88f, type: 2}
-  - {fileID: 104528, guid: 36e023af416a1a64586d53b79f1c8ad3, type: 2}
-  - {fileID: 155700, guid: 446af8592d7fc6247bf03cb1de97cd0a, type: 2}
-  - {fileID: 105822, guid: da09735f8b6c9eb40bc1b10ef1694835, type: 2}
-  - {fileID: 195898, guid: 956cfaa0239670743bf3dc2e6d222fcc, type: 2}
-  - {fileID: 101406, guid: a562e0b67f3e7b044b031ff266a61882, type: 2}
-  - {fileID: 115924, guid: ac92314c3bfa887469dcb7bc28f80216, type: 2}
-  - {fileID: 145796, guid: 500f0c9569e0f474ba784a4db0152c89, type: 2}
-  - {fileID: 171966, guid: b91ca0dee8332f848ad6003e1eb1cfaa, type: 2}
-  - {fileID: 108080, guid: a52932f96141e53419671f744d68c783, type: 2}
-  - {fileID: 124892, guid: d76ae40d2b2f16c42a7ff33bc96ea059, type: 2}
-  - {fileID: 180096, guid: 8e3b5c2afad1f60479f98103106c8320, type: 2}
   - {fileID: 193036, guid: 3bff503cbeb5b2d459762bfec99f5801, type: 2}
+  - {fileID: 170680, guid: 3129670ee9a396e48b6d66f249b74160, type: 2}
   - {fileID: 146348, guid: 40c202b853413f843ad1f0c0d7ea295b, type: 2}
-  levels: 0100000001000000020000000200000003000000030000000100000001000000020000000200000003000000030000000100000002000000030000000400000005000000060000000400000005000000
+  - {fileID: 193686, guid: f2440ec560596ab4385d61347552f079, type: 2}
+  - {fileID: 114740, guid: 4f3bb482d1c9a37459daf8d7d935933a, type: 2}
+  - {fileID: 163546, guid: 03d20fe81a39104478d61bc5e8d54c2b, type: 2}
+  - {fileID: 156764, guid: 36e023af416a1a64586d53b79f1c8ad3, type: 2}
+  - {fileID: 117636, guid: 446af8592d7fc6247bf03cb1de97cd0a, type: 2}
+  - {fileID: 137840, guid: da09735f8b6c9eb40bc1b10ef1694835, type: 2}
+  - {fileID: 123778, guid: 956cfaa0239670743bf3dc2e6d222fcc, type: 2}
+  - {fileID: 190796, guid: a562e0b67f3e7b044b031ff266a61882, type: 2}
+  - {fileID: 137202, guid: 8cf56df66d677a645ade65af0d1dcfac, type: 2}
+  - {fileID: 178596, guid: 557ad575b7da1264aa87858d71679bb8, type: 2}
+  - {fileID: 151760, guid: fd2d7a53101ad6244849bd58aea6e3b5, type: 2}
+  - {fileID: 101408, guid: acd4e522c75301849b54207030df1609, type: 2}
+  - {fileID: 115924, guid: ac92314c3bfa887469dcb7bc28f80216, type: 2}
+  - {fileID: 124664, guid: 500f0c9569e0f474ba784a4db0152c89, type: 2}
+  - {fileID: 136650, guid: 6973fbc8fc49a184382736a22f40017e, type: 2}
+  - {fileID: 142150, guid: a52932f96141e53419671f744d68c783, type: 2}
+  - {fileID: 156894, guid: d76ae40d2b2f16c42a7ff33bc96ea059, type: 2}
+  - {fileID: 180096, guid: 8e3b5c2afad1f60479f98103106c8320, type: 2}
+  - {fileID: 171824, guid: d5994586b66e9fb4bb8f7b6bcd0d83cf, type: 2}
+  - {fileID: 171824, guid: d5994586b66e9fb4bb8f7b6bcd0d83cf, type: 2}
+  - {fileID: 169488, guid: a253f73a067d07e4cac8a33797902c01, type: 2}
+  levels: 010000000100000002000000020000000300000003000000040000000400000005000000050000000600000001000000010000000200000002000000030000000300000004000000040000000500000005000000010000000200000003000000040000000500000006000000060000000600000006000000
   currentLevel: 1
   difficultyMax: 6
   prefabHeight: 9
@@ -83,8 +93,9 @@ MonoBehaviour:
   lavaPrefab: {fileID: 177242, guid: a0a5a7921d3f38643bdd8ff7e1dbb567, type: 2}
   guiPrefab: {fileID: 180668, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
   currentLevel: 1
-  meterPerLevel: 20
-  scrollSpeed: .5
+  meterPerLevel: 30
+  maxScrollSpeed: .75
+  minScrollSpeed: .400000006
 --- !u!114 &11473032
 MonoBehaviour:
   m_ObjectHideFlags: 1
