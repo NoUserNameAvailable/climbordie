@@ -186,7 +186,7 @@ MonoBehaviour:
   speed: 2
   jumpSpeed: 5
   jumpLimit: 1
-  meltingSpeed: 1
+  meltingSpeed: .5
   minSize: {x: .5, y: .5}
   maxSize: {x: 1.5, y: 1.5}
   jumpAudio: {fileID: 8300000, guid: 9888493f0d0a264419a2d6d198866b83, type: 3}

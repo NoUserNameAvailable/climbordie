@@ -22,7 +22,7 @@ public class SnowballSpawner : MonoBehaviour {
 
 			if (health < 0.5) {
 				System.Random rnd = new System.Random();
-				double stats = health - (GameController.getInstance().currentLevel * 0.02);
+				double stats = health - (GameController.getInstance().currentLevel * 0.01);
 				if (stats > 0 && rnd.NextDouble() < stats) {
 					Instantiate(
 						snowPrefab,

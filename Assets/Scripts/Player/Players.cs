@@ -10,7 +10,7 @@ public class Players : MonoBehaviour {
 	public float jumpSpeed;
 	public int jumpLimit;
 
-	public int meltingSpeed;
+	public float meltingSpeed;
 
 	public Vector2 minSize;
 	public Vector2 maxSize;

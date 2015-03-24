@@ -101,10 +101,17 @@ public class GameController : MonoBehaviour {
 
 				GetComponent<LevelManager>().currentLevel = currentLevel;
 				uiManager.updateLevel(currentLevel);
-				setScrollingSpeed(minScrollSpeed);
+				//setScrollingSpeed(minScrollSpeed);
+				
+				if (currentLevel < 4) {
+					setScrollingSpeed(maxScrollSpeed);
+				}
+				else {
+					setScrollingSpeed(minScrollSpeed);
+				}
 			}
 			
-			if (meter > meterPerLevel && lastMeter != meter && meter  % 9 == 0) {
+			/*if (meter > meterPerLevel && lastMeter != meter && meter  % 9 == 0) {
 				// Increase scrolling speed
 				if (getScrollingSpeed() + incSpeedPerLevel < maxScrollSpeed) {
 					setScrollingSpeed(getScrollingSpeed() + incSpeedPerLevel);
@@ -114,7 +121,7 @@ public class GameController : MonoBehaviour {
 				}
 				
 				lastMeter = meter;
-			}
+			}*/
 
 			// Melting player
 			if (player.gameObject.transform.position.y - lava.transform.position.y < meltingDistance) {
