@@ -6019,7 +6019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cd5d68f81214b4dab3a6bc00e68543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enable: 1
+  enable: 0
 --- !u!114 &11414842
 MonoBehaviour:
   m_ObjectHideFlags: 1
