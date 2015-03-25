@@ -9,6 +9,8 @@ TextureImporter:
     21300008: _snowman_4
     21300010: _snowman_5
     21300012: _snowman_6
+    21300014: _snowman_7
+    21300016: _snowman_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,72 +55,72 @@ TextureImporter:
     - name: _snowman_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 7
         y: 0
-        width: 46
+        width: 50
         height: 63
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_1
       rect:
         serializedVersion: 2
-        x: 74
+        x: 71
         y: 0
-        width: 46
-        height: 62
+        width: 48
+        height: 63
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_2
       rect:
         serializedVersion: 2
-        x: 138
-        y: 0
-        width: 52
-        height: 63
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: _snowman_3
-      rect:
-        serializedVersion: 2
-        x: 202
+        x: 136
         y: 0
         width: 53
         height: 62
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: _snowman_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_4
       rect:
         serializedVersion: 2
-        x: 266
-        y: 1
-        width: 52
-        height: 63
+        x: 264
+        y: 0
+        width: 55
+        height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_5
       rect:
         serializedVersion: 2
-        x: 330
-        y: 2
-        width: 52
-        height: 62
+        x: 329
+        y: 1
+        width: 56
+        height: 63
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: _snowman_6
       rect:
         serializedVersion: 2
-        x: 394
+        x: 393
         y: 0
-        width: 51
+        width: 54
         height: 62
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
