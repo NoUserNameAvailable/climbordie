@@ -94,8 +94,8 @@ MonoBehaviour:
   guiPrefab: {fileID: 180668, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
   currentLevel: 1
   meterPerLevel: 30
-  maxScrollSpeed: .75
-  minScrollSpeed: .400000006
+  maxScrollSpeed: .899999976
+  minScrollSpeed: .699999988
 --- !u!114 &11473032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8f1ae389fc7d64b97b6a3cabbce7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intervalCheck: 9
+  intervalCheck: 5
   snowPrefab: {fileID: 181186, guid: b9225bb50d73e034ba2200da6dff3b83, type: 2}
 --- !u!1001 &100100000
 Prefab:

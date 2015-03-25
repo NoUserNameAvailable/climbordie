@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 489950}
   - 212: {fileID: 21289950}
-  - 114: {fileID: 11489950}
   - 61: {fileID: 6189950}
+  - 114: {fileID: 11449200}
   m_Layer: 12
   m_Name: BonusVitesse
   m_TagString: Object
@@ -41,7 +41,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .9375, y: .75}
   m_Center: {x: 0, y: 0}
---- !u!114 &11489950
+--- !u!114 &11449200
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,14 +49,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 189950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cc47bf232132d448d1dd9f02bc995a, type: 3}
+  m_Script: {fileID: 11500000, guid: bc5ab937eaf90a546937d992ec0f757d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSpeed: 4
-  newJumpSpeed: 5
-  doubleJump: 0
-  time: 3
-  animator: {fileID: 100000, guid: 5c7aeddefe9f8499091b160181d837ed, type: 2}
 --- !u!212 &21289950
 SpriteRenderer:
   m_ObjectHideFlags: 1
