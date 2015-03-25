@@ -69,11 +69,11 @@ public class Players : MonoBehaviour {
 		Vector3 movement;
 
 		// Jumping
-		if (Input.GetKeyDown ("up") && jump < jumpLimit) {
+		if ((Input.GetKeyDown ("up") || Input.GetKeyDown ("space")) && jump < jumpLimit) {
 			canJump = true;
 		}
 
-		if (Input.GetKey ("up") && (jump == 0 || canJump)) {
+		if ((Input.GetKey ("up") || Input.GetKey ("space")) && (jump == 0 || canJump)) {
 			movement = new Vector2 (rigidbody2D.velocity.x, 1.0f * jumpSpeed);
 			rigidbody2D.velocity = movement;
 

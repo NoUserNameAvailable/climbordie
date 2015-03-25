@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 472856}
   - 212: {fileID: 21272856}
-  - 114: {fileID: 11472856}
   - 61: {fileID: 6172856}
+  - 114: {fileID: 11453358}
   m_Layer: 12
   m_Name: BonusDoubleSaut
   m_TagString: Object
@@ -41,7 +41,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1.125, y: 1}
   m_Center: {x: 0, y: 0}
---- !u!114 &11472856
+--- !u!114 &11453358
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,14 +49,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 172856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cc47bf232132d448d1dd9f02bc995a, type: 3}
+  m_Script: {fileID: 11500000, guid: 77a981ef7256a104cb702c710ba29210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSpeed: -1
-  newJumpSpeed: -1
-  doubleJump: 1
-  time: 10
-  animator: {fileID: 100006, guid: 44dd4fdbb6f10429a844c51183a4c84e, type: 2}
 --- !u!212 &21272856
 SpriteRenderer:
   m_ObjectHideFlags: 1
