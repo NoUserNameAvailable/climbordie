@@ -12,7 +12,7 @@ public class OnewayCollider : MonoBehaviour {
 		platformCollider = GetComponent<BoxCollider2D> ();
 		BoxCollider2D onewayTrigger = gameObject.AddComponent ("BoxCollider2D") as BoxCollider2D;
 
-		onewayTrigger.size = new Vector2 (platformCollider.size.x + 0.25f, platformCollider.size.y + 0.05f);
+		onewayTrigger.size = new Vector2 (platformCollider.size.x +0.15f, platformCollider.size.y + 0.05f);
 		onewayTrigger.center = new Vector2 (0.0f, -0.05f);
 		onewayTrigger.isTrigger = true;
 	}
