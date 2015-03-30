@@ -61,6 +61,10 @@ TagManager:
     userID: 2
     uniqueID: 127538681
     locked: 0
+  - name: Igloo
+    userID: 8
+    uniqueID: 211410959
+    locked: 0
   - name: Object
     userID: 6
     uniqueID: 3104399941
@@ -72,10 +76,6 @@ TagManager:
   - name: Lava
     userID: 4
     uniqueID: 1778746059
-    locked: 0
-  - name: Igloo
-    userID: 8
-    uniqueID: 211410959
     locked: 0
   - name: Wall
     userID: 5
