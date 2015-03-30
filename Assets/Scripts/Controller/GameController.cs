@@ -37,7 +37,9 @@ public class GameController : MonoBehaviour {
 	public float minScrollSpeed;
 	
 	private float incSpeedPerLevel;	
-	
+
+
+
 	// Instance
 	private static GameController instance;
 
@@ -177,6 +179,10 @@ public class GameController : MonoBehaviour {
 
 		// Set game ending status
 		gameEnd = true;
+		int uneFois = 1;
+	
+		save ();
+		
 	}
 
 	public void playerDie() {
@@ -210,6 +216,77 @@ public class GameController : MonoBehaviour {
 
 	public int getMeter() {
 		return meter;
+	}
+
+	public void save(){
+		//Debug.Log ("Metre " + meter); si implementation top5 mais bugé
+		/*for (int i=1; i<=5; i++) {
+			PlayerPrefs.SetInt(i+"Score", 6-i);
+			PlayerPrefs.SetString(i+"Name", "player "+i);
+		}
+		PlayerPrefs.Save();*/
+
+
+		/*for (int i=1; i<=5; i++) {
+			if(PlayerPrefs.HasKey(i+"Score")){
+				Debug.Log ("entre "+meter +" sauve m "+PlayerPrefs.GetInt(i+"Score"));
+				if(meter> PlayerPrefs.GetInt(i+"Score")){
+					string oldName = PlayerPrefs.GetString(i+"Name");
+					int oldScore = PlayerPrefs.GetInt(i+"Score");
+					int oldPosition = i;
+					PlayerPrefs.SetInt(i+"Score", meter);
+					PlayerPrefs.SetString(i+"Name", "player add");
+					int j=i+1;
+					while (j<=5){
+						int oldScore2 = PlayerPrefs.GetInt(j+"Score");
+						string oldName2 = PlayerPrefs.GetString(j+"Name");
+						PlayerPrefs.SetInt(j+"Score", oldScore);
+						PlayerPrefs.SetString(j+"Name", oldName);
+						oldScore = oldScore2;
+						oldName = oldName2;
+						Debug.Log(j + " " +PlayerPrefs.GetInt(j+"Score")+ " " + PlayerPrefs.GetString(j+"Name"));
+						j++;
+
+					}
+					break;
+				}
+			}
+		}
+
+		Debug.Log ("Resulats");
+		for (int i=1; i<=5; i++) {
+			Debug.Log (PlayerPrefs.GetString (i+"Name")+ " "+PlayerPrefs.GetInt(i+"Score"));
+		}
+		Debug.Log ("fIN RES");
+		PlayerPrefs.Save ();
+		//PlayerPrefs.SetInt ("1Score", meter);
+		//PlayerPrefs.SetString("1Name", "player1");
+		//Debug.Log (PlayerPrefs.GetString ("1Name")+ " "+PlayerPrefs.GetInt("1Score"));
+		*/
+
+		// pour reset 
+		//PlayerPrefs.SetInt("Score", 0);
+		if (PlayerPrefs.HasKey ("Score")) {
+			 if (meter >= PlayerPrefs.GetInt ("Score") ) {
+				PlayerPrefs.SetInt("Score", meter);
+				PlayerPrefs.Save();
+				uiManager.setColorScoreImage(Color.red);
+				uiManager.setTextScore("Congratulation you are real climber man \nNow the best score is "); 
+
+			}
+			else {
+				uiManager.setColorScoreImage(Color.black);
+				uiManager.setTextScore("Nop you're not the best climber man \nBest score is ");
+			}
+		} 
+		else {
+			PlayerPrefs.SetInt("Score", meter);
+			PlayerPrefs.Save();
+			uiManager.setColorScoreImage(Color.red);
+			uiManager.setTextScore("Congratulation you are real climber man \nNow the best score is "); 
+		}
+		
+
 	}
 
 }
