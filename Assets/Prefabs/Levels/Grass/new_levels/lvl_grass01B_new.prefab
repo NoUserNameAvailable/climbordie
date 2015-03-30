@@ -6957,6 +6957,7 @@ Prefab:
   m_AnchoredPosition: {x: -.719070077, y: -2.8857975}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: .5, y: .5}
+<<<<<<< HEAD
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -6974,3 +6975,5 @@ Prefab:
 >>>>>>> origin/dev
   m_IsPrefabParent: 1
   m_IsExploded: 1
+=======
+>>>>>>> a826eb5da915b81fc0dcd17589ebd816554de5ea
