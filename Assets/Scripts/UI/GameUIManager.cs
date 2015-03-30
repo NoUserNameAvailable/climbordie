@@ -16,10 +16,17 @@ public class GameUIManager : MonoBehaviour {
 	// Health
 	private Healthbar health;
 
+	//Score
+	private GameObject score;
+	private GameObject scoreImage;
+
 	// Use this for initialization
 	void Awake () {
 		startText = GameObject.Find ("StartText");
 		endText = GameObject.Find ("EndText");
+		score = GameObject.Find ("BestScore");
+		scoreImage = GameObject.Find ("ScoreImage");
+
 
 		timer = GameObject.Find ("Timer").GetComponent<Timer> ();
 		levelCount = GameObject.Find ("LevelCount");
@@ -31,8 +38,9 @@ public class GameUIManager : MonoBehaviour {
 		toggleStartText (false);
 		togglePlayUI (false);
 		toggleEndText (false);
-	}
 	
+	}
+
 	public void updateLevel(int level) {
 		levelCount.GetComponent<Text> ().text = "Level " + level;
 	}
@@ -54,6 +62,14 @@ public class GameUIManager : MonoBehaviour {
 
 	public void toggleEndText(bool enabled) {
 		endText.SetActive (enabled);
+	}
+
+	public void setTextScore(string text){
+		score.GetComponent<Text> ().text = text +PlayerPrefs.GetInt("Score");
+	}
+
+	public void setColorScoreImage(Color color){
+		scoreImage.GetComponent<Image> ().color = color;
 	}
 
 	public void startTimer() {
