@@ -1,15 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1 &132630
+=======
+--- !u!1 &111520
+>>>>>>> origin/dev
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
+<<<<<<< HEAD
   - 4: {fileID: 432630}
   - 212: {fileID: 21232630}
   - 95: {fileID: 9532630}
+=======
+  - 4: {fileID: 411520}
+  - 212: {fileID: 21211520}
+  - 95: {fileID: 9511520}
+>>>>>>> origin/dev
   m_Layer: 0
   m_Name: Herbe
   m_TagString: Untagged
@@ -17,25 +27,43 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &432630
+=======
+--- !u!4 &411520
+>>>>>>> origin/dev
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 132630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .686065555, y: 3.23087549, z: 0}
+=======
+  m_GameObject: {fileID: 111520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.63199997, y: -1.37399995, z: 0}
+>>>>>>> origin/dev
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
 --- !u!95 &9532630
+=======
+--- !u!95 &9511520
+>>>>>>> origin/dev
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 132630}
+=======
+  m_GameObject: {fileID: 111520}
+>>>>>>> origin/dev
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 5ee6a74b4e7b5644e944dfa5c45c391d, type: 2}
@@ -44,12 +72,20 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+<<<<<<< HEAD
 --- !u!212 &21232630
+=======
+--- !u!212 &21211520
+>>>>>>> origin/dev
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD
   m_GameObject: {fileID: 132630}
+=======
+  m_GameObject: {fileID: 111520}
+>>>>>>> origin/dev
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,6 +111,10 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
+<<<<<<< HEAD
   m_RootGameObject: {fileID: 132630}
+=======
+  m_RootGameObject: {fileID: 111520}
+>>>>>>> origin/dev
   m_IsPrefabParent: 1
   m_IsExploded: 1

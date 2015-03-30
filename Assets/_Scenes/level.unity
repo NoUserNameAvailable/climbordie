@@ -8546,6 +8546,10 @@ Prefab:
       propertyPath: firstLevel
       value: 
       objectReference: {fileID: 1327678482}
+    - target: {fileID: 11455558, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
+      propertyPath: guiPrefab
+      value: 
+      objectReference: {fileID: 110446, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52321a32871ffd642b70d4de2170074e, type: 2}
   m_RootGameObject: {fileID: 2126752097}
@@ -14166,7 +14170,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 115948, guid: a7b1ee609dfa33648ab0aa043ac9f810, type: 2}
   meltingDistance: 7
   lavaPrefab: {fileID: 177242, guid: a0a5a7921d3f38643bdd8ff7e1dbb567, type: 2}
-  guiPrefab: {fileID: 180668, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
+  guiPrefab: {fileID: 110446, guid: 350d3e508e4ec5041ae570999deef4ab, type: 2}
   currentLevel: 1
   meterPerLevel: 30
   maxScrollSpeed: .899999976
@@ -14207,16 +14211,16 @@ MonoBehaviour:
   - {fileID: 146348, guid: 40c202b853413f843ad1f0c0d7ea295b, type: 2}
   - {fileID: 193686, guid: f2440ec560596ab4385d61347552f079, type: 2}
   - {fileID: 114740, guid: 4f3bb482d1c9a37459daf8d7d935933a, type: 2}
-  - {fileID: 163546, guid: 03d20fe81a39104478d61bc5e8d54c2b, type: 2}
-  - {fileID: 156764, guid: 36e023af416a1a64586d53b79f1c8ad3, type: 2}
-  - {fileID: 117636, guid: 446af8592d7fc6247bf03cb1de97cd0a, type: 2}
-  - {fileID: 137840, guid: da09735f8b6c9eb40bc1b10ef1694835, type: 2}
-  - {fileID: 123778, guid: 956cfaa0239670743bf3dc2e6d222fcc, type: 2}
-  - {fileID: 190796, guid: a562e0b67f3e7b044b031ff266a61882, type: 2}
-  - {fileID: 137202, guid: 8cf56df66d677a645ade65af0d1dcfac, type: 2}
-  - {fileID: 178596, guid: 557ad575b7da1264aa87858d71679bb8, type: 2}
-  - {fileID: 151760, guid: fd2d7a53101ad6244849bd58aea6e3b5, type: 2}
-  - {fileID: 101408, guid: acd4e522c75301849b54207030df1609, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 115924, guid: ac92314c3bfa887469dcb7bc28f80216, type: 2}
   - {fileID: 124664, guid: 500f0c9569e0f474ba784a4db0152c89, type: 2}
   - {fileID: 136650, guid: 6973fbc8fc49a184382736a22f40017e, type: 2}
@@ -14225,7 +14229,7 @@ MonoBehaviour:
   - {fileID: 180096, guid: 8e3b5c2afad1f60479f98103106c8320, type: 2}
   - {fileID: 171824, guid: d5994586b66e9fb4bb8f7b6bcd0d83cf, type: 2}
   - {fileID: 171824, guid: d5994586b66e9fb4bb8f7b6bcd0d83cf, type: 2}
-  - {fileID: 169488, guid: a253f73a067d07e4cac8a33797902c01, type: 2}
+  - {fileID: 0}
   levels: 010000000100000002000000020000000300000003000000040000000400000005000000050000000600000001000000010000000200000002000000030000000300000004000000040000000500000005000000010000000200000003000000040000000500000006000000060000000600000006000000
   currentLevel: 1
   difficultyMax: 6
