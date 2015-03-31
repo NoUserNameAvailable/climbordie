@@ -21,6 +21,8 @@ public class ObjectSpawner : MonoBehaviour {
 				addMalus();
 
 			Destroy(this.gameObject);
+		} else {
+			Destroy(this.gameObject);
 		}
 	}
 
