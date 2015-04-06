@@ -66,8 +66,6 @@ public class LevelManager : MonoBehaviour {
 
 		if (seed > 0.15 && seed <= 0.35 && difficulty > 1) {
 			prefab = getRandomPrefab (difficulty - 1);
-		} else if (seed <= 0.15 && difficulty > 2) {
-			prefab = getRandomPrefab (difficulty - 2);
 		} else {
 			prefab = getRandomPrefab (difficulty);
 		}

@@ -22,6 +22,9 @@ public class ObjectSpawner : MonoBehaviour {
 
 			Destroy(this.gameObject);
 		}
+		else {
+			Destroy(this.gameObject);
+		}
 	}
 
 	void addBonus() {
